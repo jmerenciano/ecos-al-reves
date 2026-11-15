@@ -24,7 +24,7 @@ for (const lang of readdirSync(packsDir).sort()) {
     catalog.push({
       id: pack.id, lang: pack.lang, name: pack.name, emoji: pack.emoji || "📦",
       description: pack.description || "", version: pack.version || 1,
-      count, builtin: !!pack.builtin, path: `${lang}/${file}`
+      count, builtin: !!pack.builtin, premium: !!pack.premium, path: `${lang}/${file}`
     });
     if (pack.builtin) builtin.push(pack);
   }

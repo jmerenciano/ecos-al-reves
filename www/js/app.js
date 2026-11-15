@@ -183,6 +183,11 @@
       <button class="btn ghost wide" id="manage">📚 ${t("managePacks")}</button>
     </section>
 
+    <footer class="foot">
+      <a href="privacy.html" target="_blank" rel="noopener">${t("privacy")}</a>
+      ${Ads.hasPrivacyOptions ? `<button class="link-btn" id="ad-opts">${t("adsOptions")}</button>` : ""}
+    </footer>
+
     <div class="start-bar"><button class="btn primary big" id="start">${t("start")}</button></div>
     `;
 
@@ -218,6 +223,8 @@
       S.selectedPacks = cur; saveS(); renderSetup();
     });
     $("#manage").onclick = renderPacks;
+    const ao = $("#ad-opts");
+    if (ao) ao.onclick = () => Ads.showPrivacyOptions();
     $("#start").onclick = startGame;
   }
 
@@ -296,17 +303,24 @@
     if (!list.length) { box.innerHTML = `<p class="hint">—</p>`; return; }
     box.innerHTML = `<ul class="pack-list">${list.map(e => {
       const have = Packs.get(e.id);
-      const label = !have ? t("download") : (have.version < e.version ? t("update") : t("downloaded"));
+      const locked = !have && e.premium && Ads.available;
+      const label = !have ? (locked ? t("watchToUnlock") : t("download")) : (have.version < e.version ? t("update") : t("downloaded"));
       return `<li>
         <span class="pack-emoji">${esc(e.emoji)}</span>
-        <div class="grow"><b>${esc(e.name)}</b><small>${esc(e.description)} · ${t("nWords", { n: e.count })} · ${e.lang.toUpperCase()}</small></div>
+        <div class="grow"><b>${esc(e.name)}${e.premium ? ` <span class="premium">${t("premium")}</span>` : ""}</b><small>${esc(e.description)} · ${t("nWords", { n: e.count })} · ${e.lang.toUpperCase()}</small></div>
         <button class="btn small ${have && have.version >= e.version ? "ghost" : ""}" data-dl="${e.id}" ${have && have.version >= e.version ? "disabled" : ""}>${label}</button>
       </li>`;
     }).join("")}</ul>`;
     box.querySelectorAll("[data-dl]").forEach(b => b.onclick = async () => {
-      b.disabled = true; b.textContent = t("loading");
+      const entry = catalogCache.find(e => e.id === b.dataset.dl);
+      b.disabled = true;
+      if (entry.premium && !Packs.get(entry.id) && Ads.available) {
+        const ok = await Ads.rewarded();
+        if (!ok) { b.disabled = false; return; }
+      }
+      b.textContent = t("loading");
       try {
-        const p = await Packs.download(catalogCache.find(e => e.id === b.dataset.dl));
+        const p = await Packs.download(entry);
         addToSelection(p.id);
         toast(t("imported", { name: p.name }));
         renderPacks();
@@ -412,7 +426,7 @@
     keepAwake();
     game = {
       players: S.players.map((name, i) => ({ name: name.trim() || t("playerN", { n: i + 1 }), score: 0, avatar: AVATARS[i], color: COLORS[i] })),
-      round: 1, idx: 0, deck: words, deckPos: 0, ids
+      round: 1, idx: 0, deck: words, deckPos: 0, ids, history: []
     };
     startTurn();
   }
@@ -561,6 +575,7 @@
           </div>
           <button class="link-btn" id="play-ch">${turn.effect.emoji} ${t("playChallenge")}</button>
         </div>
+        ${funnyHTML()}
         ${showVotes ? `
           <div class="vote">
             <p><b>${t("vote")}</b><br><small>${judge}</small></p>
@@ -608,6 +623,9 @@
         turn.attempt = buf;
         turn.result = A.transform(buf, turn.effect.mode);
         turn.step = "reveal";
+        // guardamos las últimas imitaciones para los "mejores momentos"
+        game.history.push({ p: turn.imitator, word: turn.word, buf: turn.result, rate: 1 / turn.effect.rate });
+        if (game.history.length > 12) game.history.shift();
         renderTurn();
         A.play(turn.result, { rate: 1 / turn.effect.rate });
       });
@@ -621,6 +639,7 @@
       $("#play-res").onclick = () => A.play(turn.result, { rate: 1 / turn.effect.rate });
       $("#play-orig").onclick = () => A.play(turn.original);
       $("#play-ch").onclick = () => A.play(turn.challenge, { rate: turn.effect.rate, fx: turn.effect.fx });
+      bindFunny(app, turn.result, 1 / turn.effect.rate);
       const sw = $("#show-word");
       if (sw) sw.onclick = () => { turn.wordShown = true; renderTurn(); };
       const vh = $("#v-hit"), vm = $("#v-miss");
@@ -628,6 +647,27 @@
       if (vm) vm.onclick = () => verdict(false);
     }
   }
+
+  /* Voces graciosas para volver a escuchar una imitación y reírse */
+  const FUNNY = [
+    { id: "squirrel", emoji: "🐿️", rate: 1.7 },
+    { id: "giant", emoji: "🦣", rate: 0.6 },
+    { id: "robot", emoji: "🤖", rate: 1, fx: "robot" },
+    { id: "alien", emoji: "👽", rate: 1.45, fx: "robot" },
+    { id: "cave", emoji: "🦇", rate: 0.9, fx: "cave" }
+  ];
+  function funnyHTML() {
+    return `<div class="funny"><p>${t("funnyVoices")}</p><div class="row center wrap tight">
+      ${FUNNY.map(v => `<button class="pill-btn voice" data-voice="${v.id}">${v.emoji} ${t("fx_" + v.id)}</button>`).join("")}
+    </div></div>`;
+  }
+  function bindFunny(root, buf, baseRate) {
+    root.querySelectorAll(".funny [data-voice]").forEach(b => b.onclick = () => {
+      const v = FUNNY.find(x => x.id === b.dataset.voice);
+      A.play(buf, { rate: baseRate * v.rate, fx: v.fx });
+    });
+  }
+  const pick = key => { const l = t(key).split("|"); return l[Math.floor(Math.random() * l.length)]; };
 
   function getCss(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#7B4DFF"; }
 
@@ -642,11 +682,16 @@
       <main class="verdict ${good ? "good" : "bad"}">
         <div class="verdict-emoji">${good ? "🎉" : "🙈"}</div>
         <h1>${good ? t("hit") : t("miss")}</h1>
+        <p class="verdict-line">${esc(pick(good ? "hitLines" : "missLines"))}</p>
         <p class="verdict-who" style="--pc:${p.color}">${p.avatar} ${esc(p.name)} · ${t("pts", { n: p.score })}</p>
+        ${funnyHTML()}
         <button class="btn primary big" id="next">${last ? t("seeResults") : t("next")}</button>
       </main>`;
     bindQuit();
-    $("#next").onclick = () => {
+    bindFunny(app, turn.result, 1 / turn.effect.rate);
+    $("#next").onclick = async () => {
+      A.stopAll();
+      await Ads.afterTurn(last);
       game.idx++;
       if (game.idx >= game.players.length) { game.idx = 0; game.round++; }
       if (game.round > S.rounds) renderFinal(); else startTurn();
@@ -675,15 +720,40 @@
               <span class="avatar">${p.avatar}</span><span class="grow">${esc(p.name)}</span><b>${t("pts", { n: p.score })}</b></li>`;
           }).join("")}
         </ol>
+        ${game.history.length ? `
+        <section class="card moments">
+          <h2>${t("bestMoments")}</h2>
+          <ul>
+            ${game.history.slice().reverse().map((h, k) => {
+              const pl = game.players[h.p];
+              return `<li style="--pc:${pl.color}">
+                <span class="avatar">${pl.avatar}</span>
+                <span class="grow"><b>${esc(pl.name)}</b><small>${esc(h.word)}</small></span>
+                <button class="icon-btn" data-m="${k}" data-v="" aria-label="${t("playAttempt")}">▶</button>
+                <button class="icon-btn" data-m="${k}" data-v="squirrel" aria-label="${t("fx_squirrel")}">🐿️</button>
+                <button class="icon-btn" data-m="${k}" data-v="giant" aria-label="${t("fx_giant")}">🦣</button>
+              </li>`;
+            }).join("")}
+          </ul>
+        </section>` : ""}
         <div class="row center wrap">
           <button class="btn ghost big" id="settings">${t("newGame")}</button>
           <button class="btn primary big" id="again">${t("playAgain")}</button>
         </div>
       </main>`;
     if (top > 0) confetti();
+    const hist = game.history.slice().reverse();
+    app.querySelectorAll("[data-m]").forEach(b => b.onclick = () => {
+      const h = hist[+b.dataset.m];
+      const v = FUNNY.find(x => x.id === b.dataset.v);
+      A.play(h.buf, { rate: h.rate * (v ? v.rate : 1), fx: v && v.fx });
+    });
     $("#again").onclick = startGame;
     $("#settings").onclick = () => { game = null; renderSetup(); };
   }
 
   renderSetup();
+  // Los anuncios se preparan en segundo plano; al estar listos se refresca
+  // la pantalla de ajustes para mostrar "Opciones de anuncios" si hace falta.
+  Ads.init().then(() => { if (!game && $("#start")) renderSetup(); });
 })();

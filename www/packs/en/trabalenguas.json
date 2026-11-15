@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "id": "en-trabalenguas",
+  "lang": "en",
+  "name": "Tongue twisters",
+  "emoji": "👅",
+  "description": "Hard enough forwards… now try them backwards!",
+  "words": {
+    "easy": [
+      "red lorry yellow lorry",
+      "she sells seashells",
+      "toy boat toy boat",
+      "unique new york"
+    ],
+    "medium": [
+      "peter piper picked a peck",
+      "fuzzy wuzzy was a bear",
+      "how much wood would a woodchuck chuck",
+      "a proper copper coffee pot"
+    ],
+    "hard": [
+      "she sells seashells by the seashore",
+      "peter piper picked a peck of pickled peppers",
+      "betty bought a bit of better butter",
+      "six slippery snails slid slowly seaward"
+    ]
+  }
+}

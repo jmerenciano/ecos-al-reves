@@ -10,6 +10,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "ca/animales.json"
     },
     {
@@ -21,6 +22,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "ca/casa.json"
     },
     {
@@ -32,6 +34,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "ca/comida.json"
     },
     {
@@ -43,6 +46,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "ca/deportes.json"
     },
     {
@@ -54,6 +58,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "ca/viajes.json"
     },
     {
@@ -65,6 +70,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "de/animales.json"
     },
     {
@@ -76,6 +82,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "de/casa.json"
     },
     {
@@ -87,6 +94,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "de/comida.json"
     },
     {
@@ -98,6 +106,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "de/deportes.json"
     },
     {
@@ -109,6 +118,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "de/viajes.json"
     },
     {
@@ -120,6 +130,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "en/animales.json"
     },
     {
@@ -131,6 +142,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "en/casa.json"
     },
     {
@@ -142,6 +154,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "en/comida.json"
     },
     {
@@ -153,6 +166,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "en/deportes.json"
     },
     {
@@ -164,6 +178,7 @@
       "version": 1,
       "count": 24,
       "builtin": false,
+      "premium": true,
       "path": "en/musica.json"
     },
     {
@@ -175,7 +190,20 @@
       "version": 1,
       "count": 24,
       "builtin": false,
+      "premium": true,
       "path": "en/profesiones.json"
+    },
+    {
+      "id": "en-trabalenguas",
+      "lang": "en",
+      "name": "Tongue twisters",
+      "emoji": "👅",
+      "description": "Hard enough forwards… now try them backwards!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "en/trabalenguas.json"
     },
     {
       "id": "en-viajes",
@@ -186,6 +214,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "en/viajes.json"
     },
     {
@@ -197,6 +226,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "es/animales.json"
     },
     {
@@ -208,6 +238,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "es/casa.json"
     },
     {
@@ -219,6 +250,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "es/comida.json"
     },
     {
@@ -230,6 +262,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "es/deportes.json"
     },
     {
@@ -241,6 +274,7 @@
       "version": 1,
       "count": 24,
       "builtin": false,
+      "premium": true,
       "path": "es/musica.json"
     },
     {
@@ -252,7 +286,20 @@
       "version": 1,
       "count": 24,
       "builtin": false,
+      "premium": true,
       "path": "es/profesiones.json"
+    },
+    {
+      "id": "es-trabalenguas",
+      "lang": "es",
+      "name": "Trabalenguas",
+      "emoji": "👅",
+      "description": "Si ya cuestan al derecho… ¡imagínate al revés!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "es/trabalenguas.json"
     },
     {
       "id": "es-viajes",
@@ -263,6 +310,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "es/viajes.json"
     },
     {
@@ -274,6 +322,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "fr/animales.json"
     },
     {
@@ -285,6 +334,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "fr/casa.json"
     },
     {
@@ -296,6 +346,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "fr/comida.json"
     },
     {
@@ -307,6 +358,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "fr/deportes.json"
     },
     {
@@ -318,6 +370,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "fr/viajes.json"
     },
     {
@@ -329,6 +382,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "it/animales.json"
     },
     {
@@ -340,6 +394,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "it/casa.json"
     },
     {
@@ -351,6 +406,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "it/comida.json"
     },
     {
@@ -362,6 +418,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "it/deportes.json"
     },
     {
@@ -373,6 +430,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "it/viajes.json"
     },
     {
@@ -384,6 +442,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "pt/animales.json"
     },
     {
@@ -395,6 +454,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "pt/casa.json"
     },
     {
@@ -406,6 +466,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "pt/comida.json"
     },
     {
@@ -417,6 +478,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "pt/deportes.json"
     },
     {
@@ -428,6 +490,7 @@
       "version": 1,
       "count": 24,
       "builtin": true,
+      "premium": false,
       "path": "pt/viajes.json"
     }
   ]

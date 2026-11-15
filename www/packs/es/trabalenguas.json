@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "id": "es-trabalenguas",
+  "lang": "es",
+  "name": "Trabalenguas",
+  "emoji": "👅",
+  "description": "Si ya cuestan al derecho… ¡imagínate al revés!",
+  "words": {
+    "easy": [
+      "tres tristes tigres",
+      "erre con erre",
+      "pepe pecas pica papas",
+      "pablito clavó un clavito"
+    ],
+    "medium": [
+      "el perro de san roque no tiene rabo",
+      "como poco coco como poco coco compro",
+      "el cielo está enladrillado",
+      "compadre cómprame un coco"
+    ],
+    "hard": [
+      "tres tristes tigres tragaban trigo en un trigal",
+      "pepe pecas pica papas con un pico",
+      "erre con erre cigarro erre con erre barril",
+      "si tu gusto gustara del gusto que gusta mi gusto"
+    ]
+  }
+}

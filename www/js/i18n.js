@@ -47,7 +47,8 @@
       fx_cave: "Cueva", fx_cave_d: "Al revés con eco",
       fx_phone: "Teléfono", fx_phone_d: "Al revés, como por teléfono",
       fx_puzzle: "Puzle", fx_puzzle_d: "Cortado en 3 trozos, cada uno al revés",
-      fx_alien: "Marciano", fx_alien_d: "Al revés, agudo y con voz robótica"
+      fx_alien: "Marciano", fx_alien_d: "Al revés, agudo y con voz robótica",
+      funnyVoices: "😂 ¡Escúchalo con otra voz!", bestMoments: "😂 Mejores momentos", privacy: "Privacidad", adsOptions: "Opciones de anuncios", watchToUnlock: "🎬 Ver vídeo y descargar", premium: "⭐ Especial", hitLines: "¡Pareces un loro profesional!|¡Hablas al revés como un experto!|¡Clavado! ¿Seguro que no eres de otro planeta?|¡Eso ha sonado increíble!", missLines: "Eso ha sonado a pato resfriado 🦆|¡Casi! Bueno… no tanto 😅|¿Eso era idioma marciano?|¡Ha sonado a robot sin pilas!"
     },
     en: {
       langName: "English",
@@ -94,7 +95,8 @@
       fx_cave: "Cave", fx_cave_d: "Backwards with an echo",
       fx_phone: "Phone", fx_phone_d: "Backwards, like on the phone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cut into 3 pieces, each one backwards",
-      fx_alien: "Alien", fx_alien_d: "Backwards, squeaky and robotic"
+      fx_alien: "Alien", fx_alien_d: "Backwards, squeaky and robotic",
+      funnyVoices: "😂 Hear it with a silly voice!", bestMoments: "😂 Funniest moments", privacy: "Privacy", adsOptions: "Ad options", watchToUnlock: "🎬 Watch a video to unlock", premium: "⭐ Special", hitLines: "You sound like a pro parrot!|Backwards-talking expert!|Spot on! Are you from another planet?|That sounded amazing!", missLines: "That sounded like a duck with a cold 🦆|So close! Well… not really 😅|Was that Martian?|You sound like a robot with flat batteries!"
     },
     ca: {
       langName: "Català / Valencià",
@@ -141,7 +143,8 @@
       fx_cave: "Cova", fx_cave_d: "Al revés amb eco",
       fx_phone: "Telèfon", fx_phone_d: "Al revés, com per telèfon",
       fx_puzzle: "Trencaclosques", fx_puzzle_d: "Tallat en 3 trossos, cadascun al revés",
-      fx_alien: "Marcià", fx_alien_d: "Al revés, agut i amb veu robòtica"
+      fx_alien: "Marcià", fx_alien_d: "Al revés, agut i amb veu robòtica",
+      funnyVoices: "😂 Escolta-ho amb una altra veu!", bestMoments: "😂 Millors moments", privacy: "Privacitat", adsOptions: "Opcions d'anuncis", watchToUnlock: "🎬 Veure vídeo i descarregar", premium: "⭐ Especial", hitLines: "Sembles un lloro professional!|Parles al revés com un expert!|Clavat! Segur que no eres d'un altre planeta?|Això ha sonat increïble!", missLines: "Això ha sonat a ànec refredat 🦆|Quasi! Bé… no tant 😅|Això era idioma marcià?|Ha sonat a robot sense piles!"
     },
     fr: {
       langName: "Français",
@@ -188,7 +191,8 @@
       fx_cave: "Grotte", fx_cave_d: "À l'envers avec de l'écho",
       fx_phone: "Téléphone", fx_phone_d: "À l'envers, comme au téléphone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Coupé en 3 morceaux, chacun à l'envers",
-      fx_alien: "Martien", fx_alien_d: "À l'envers, aigu et robotique"
+      fx_alien: "Martien", fx_alien_d: "À l'envers, aigu et robotique",
+      funnyVoices: "😂 Écoute-le avec une autre voix !", bestMoments: "😂 Meilleurs moments", privacy: "Confidentialité", adsOptions: "Options publicitaires", watchToUnlock: "🎬 Voir une vidéo et télécharger", premium: "⭐ Spécial", hitLines: "Tu parles comme un perroquet pro !|Expert du parler à l'envers !|Pile poil ! Tu viens d'une autre planète ?|C'était incroyable !", missLines: "On aurait dit un canard enrhumé 🦆|Presque ! Enfin… pas vraiment 😅|C'était du martien ?|On dirait un robot sans piles !"
     },
     pt: {
       langName: "Português",
@@ -235,7 +239,8 @@
       fx_cave: "Gruta", fx_cave_d: "Ao contrário com eco",
       fx_phone: "Telefone", fx_phone_d: "Ao contrário, como ao telefone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cortado em 3 pedaços, cada um ao contrário",
-      fx_alien: "Marciano", fx_alien_d: "Ao contrário, agudo e robótico"
+      fx_alien: "Marciano", fx_alien_d: "Ao contrário, agudo e robótico",
+      funnyVoices: "😂 Ouve com outra voz!", bestMoments: "😂 Melhores momentos", privacy: "Privacidade", adsOptions: "Opções de anúncios", watchToUnlock: "🎬 Ver vídeo e descarregar", premium: "⭐ Especial", hitLines: "Pareces um papagaio profissional!|Especialista em falar ao contrário!|Em cheio! Tens a certeza que não és de outro planeta?|Isso soou incrível!", missLines: "Isso soou a pato constipado 🦆|Quase! Bem… nem por isso 😅|Isso era marciano?|Pareces um robô sem pilhas!"
     },
     it: {
       langName: "Italiano",
@@ -282,7 +287,8 @@
       fx_cave: "Grotta", fx_cave_d: "Al contrario con l'eco",
       fx_phone: "Telefono", fx_phone_d: "Al contrario, come al telefono",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Tagliato in 3 pezzi, ognuno al contrario",
-      fx_alien: "Marziano", fx_alien_d: "Al contrario, acuto e robotico"
+      fx_alien: "Marziano", fx_alien_d: "Al contrario, acuto e robotico",
+      funnyVoices: "😂 Ascoltalo con un'altra voce!", bestMoments: "😂 Momenti migliori", privacy: "Privacy", adsOptions: "Opzioni annunci", watchToUnlock: "🎬 Guarda un video e scarica", premium: "⭐ Speciale", hitLines: "Sembri un pappagallo professionista!|Esperto del parlare al contrario!|Perfetto! Sei sicuro di non venire da un altro pianeta?|È suonato benissimo!", missLines: "Sembrava un'anatra raffreddata 🦆|Quasi! Beh… non proprio 😅|Era marziano?|Sembri un robot scarico!"
     },
     de: {
       langName: "Deutsch",
@@ -329,7 +335,8 @@
       fx_cave: "Höhle", fx_cave_d: "Rückwärts mit Echo",
       fx_phone: "Telefon", fx_phone_d: "Rückwärts wie am Telefon",
       fx_puzzle: "Puzzle", fx_puzzle_d: "In 3 Stücke geschnitten, jedes rückwärts",
-      fx_alien: "Marsmensch", fx_alien_d: "Rückwärts, hoch und robotisch"
+      fx_alien: "Marsmensch", fx_alien_d: "Rückwärts, hoch und robotisch",
+      funnyVoices: "😂 Hör es mit lustiger Stimme!", bestMoments: "😂 Lustigste Momente", privacy: "Datenschutz", adsOptions: "Werbeeinstellungen", watchToUnlock: "🎬 Video ansehen und laden", premium: "⭐ Spezial", hitLines: "Du klingst wie ein Profi-Papagei!|Rückwärts-Sprech-Experte!|Volltreffer! Kommst du von einem anderen Planeten?|Das klang großartig!", missLines: "Das klang wie eine erkältete Ente 🦆|Fast! Na ja… nicht ganz 😅|War das Marsianisch?|Wie ein Roboter mit leeren Batterien!"
     }
   };
 

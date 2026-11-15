@@ -1,35 +1,82 @@
 # 🎙️ Ecos al Revés
 
-Juego de voz para jugar en familia, de 1 a 10 jugadores, con un solo móvil.
+**¿Eres capaz de hablar al revés?**
+
+Lee una palabra en voz alta. El móvil la reproduce **al revés**. Ahora imita ese sonido rarísimo… y la app le vuelve a dar la vuelta. ¿Suena como la palabra original? 🤣
+
+Un juego de risas garantizadas para jugar en familia, con amigos o en fiestas. Solo necesitas **un móvil** que vais pasando de mano en mano.
+
+▶️ **[¡Juega gratis ahora en el navegador!](https://jmerenciano.github.io/ecos-al-reves/)** · 📱 Android · 🍎 iOS *(próximamente)*
+
+<p align="center">
+  <img src="docs/capturas/ajustes.png" width="200" alt="Ajustes de la partida">
+  <img src="docs/capturas/escuchar.png" width="200" alt="Escuchar el sonido al revés">
+  <img src="docs/capturas/acierto.png" width="200" alt="¡Acierto!">
+  <img src="docs/capturas/final.png" width="200" alt="Podio y mejores momentos">
+</p>
+
+## ✨ Por qué te va a gustar
+
+- 👨‍👩‍👧‍👦 **De 1 a 10 jugadores** con un solo móvil
+- 🎤 **Dos modos:** *Solo* (imita tu propia voz) y *Reto* (adivina la palabra secreta de otro)
+- 🐿️ **8 efectos locos:** Ardilla, Gigante, Robot, Cueva, Teléfono, Puzle, Marciano y Clásico
+- 😂 **Vuelve a escuchar cada imitación con voces graciosas** y repasa los **mejores momentos** al final de la partida
+- 🌍 **7 idiomas:** español, inglés, catalán/valenciano, francés, portugués, italiano y alemán
+- 📚 **Temarios:** deportes, casa, animales, comida, viajes… descarga más o crea los tuyos y compártelos
+- 🔒 **Sin registro.** No guardamos tu voz: todo ocurre en tu móvil
+
+## 🤝 ¡Ayúdanos a crecer!
+
+¿Hablas otro idioma o se te ocurre un temario divertido? **Las contribuciones son bienvenidas:**
+
+- 🌐 **Traduce el juego** a tu idioma (`www/js/i18n.js`)
+- 📝 **Crea un temario** (un archivo JSON en `www/packs/<idioma>/`) y abre un Pull Request
+- 🐛 **Avisa de errores** o propón ideas en *Issues*
+
+⭐ **Si te ha hecho reír, ¡dale una estrella al repositorio!** Nos ayuda a que más familias lo descubran.
+
+---
+
+## Cómo se juega
 
 1. Lees una palabra en voz alta.
-2. La app la reproduce **al revés** (y con efectos, si quieres).
-3. Imitas ese sonido raro. Puedes escucharlo todas las veces que quieras, pero **solo se graba una vez**.
-4. La app da la vuelta a tu imitación y… ¿suena como la palabra original? Los demás votan **Acierto** o **Fallo**.
-
-## Modos
-
-- **Solo**: cada jugador lee su palabra e imita su propia voz al revés.
-- **Reto**: un jugador graba una palabra secreta, el siguiente la imita sin verla y tiene que adivinarla.
-
-## Efectos
-
-Clásico (solo al revés), Ardilla, Gigante, Robot, Cueva, Teléfono, Puzle y Marciano. En cada turno sale uno al azar entre los elegidos.
-
-## Idiomas
-
-Español, inglés, catalán/valenciano, francés, portugués, italiano y alemán. Los textos están en `www/js/i18n.js`.
+2. La app la reproduce **al revés** (con un efecto al azar entre los que elijas).
+3. Imitas ese sonido. Puedes escucharlo todas las veces que quieras, pero **solo se graba una vez**.
+4. La app da la vuelta a tu imitación y los demás votan **Acierto** o **Fallo**. Después, ¡a escucharla con voz de ardilla! 🐿️
 
 ## Temarios
 
 - **Incluidos** en la app (funcionan sin internet): Deportes, Casa, Animales, Comida, y Viajes y lugares, en los 7 idiomas.
-- **Catálogo descargable**: la app lee `www/packs/catalog.json` desde este repositorio de GitHub. Para publicar un temario nuevo no hace falta actualizar la app:
+- **Catálogo descargable**: la app lee `www/packs/catalog.json` desde este repositorio, así que para publicar un temario nuevo no hace falta actualizar la app:
   1. Crea `www/packs/<idioma>/<nombre>.json` (copia uno existente como plantilla).
   2. Ejecuta `npm run packs` para regenerar el catálogo.
   3. Haz commit y push.
-- **Propios**: desde *Gestionar temarios* puedes crear temarios, exportarlos (compartir archivo o copiar texto) e importarlos (archivo o pegar texto).
+- **Especiales** (`"premium": true`): en las apps se desbloquean viendo un vídeo con recompensa. En la web se descargan gratis.
+- **Propios**: desde *Gestionar temarios* puedes crearlos, exportarlos (compartir archivo o copiar texto) e importarlos.
 
 Si un temario lleva `"builtin": true`, se incluye dentro de la app al ejecutar `npm run packs`.
+
+## Publicidad (AdMob)
+
+Los anuncios **solo aparecen en las apps de Android e iOS**. La web no tiene anuncios. Están pensados para no estropear la diversión:
+
+| Anuncio | Cuándo |
+|---|---|
+| Pantalla completa (intersticial) | Entre turnos, cada 4 turnos como mucho y nunca dos con menos de 2,5 minutos de diferencia. Nunca mientras se graba o suena una voz. |
+| Vídeo con recompensa | Solo si el jugador quiere desbloquear un temario *Especial*. |
+
+Solo se piden anuncios aptos para todos los públicos (clasificación G). En Europa se muestra el formulario de consentimiento de Google, que se puede cambiar en *Opciones de anuncios*, y en iPhone se pide el permiso de seguimiento.
+
+**Para activar los anuncios reales:**
+1. Crea una cuenta en [AdMob](https://admob.google.com) y añade las apps de Android e iOS.
+2. Crea para cada una un bloque **Intersticial** y otro **Bonificado (rewarded)**.
+3. En **Privacidad y mensajes**, crea el mensaje de consentimiento RGPD.
+4. Copia tus IDs en `www/js/config.js` (`ads.ids`) y cambia `useTestAds` a `false`.
+5. Ejecuta `npm run sync` para aplicarlos a los proyectos nativos.
+
+⚠️ Mientras pruebas, deja `useTestAds: true`. Si pulsas tus propios anuncios reales, AdMob puede cerrarte la cuenta.
+
+La política de privacidad está en `www/privacy.html` (se publica en `…/ecos-al-reves/privacy.html`). Los textos de las fichas de las tiendas en los 7 idiomas están en [`docs/fichas-tiendas.md`](docs/fichas-tiendas.md).
 
 ## Probar en local
 
@@ -74,8 +121,11 @@ www/                 la app (HTML, CSS, JS): es lo que se publica y se empaqueta
   js/audio.js        micrófono, inversión y efectos de sonido
   js/i18n.js         textos en todos los idiomas
   js/packs.js        temarios: catálogo, descarga, importar y exportar
-  js/config.js       dirección del catálogo online
+  js/config.js       catálogo online y configuración de anuncios
+  js/ads.js          anuncios AdMob (solo en las apps)
+  privacy.html       política de privacidad
   packs/             temarios en JSON + catalog.json
-scripts/             generador del catálogo y permisos nativos de micrófono
+scripts/             generador del catálogo y configuración nativa (micrófono y AdMob)
+docs/                capturas y textos para las tiendas
 capacitor.config.json  configuración de las apps Android/iOS
 ```
