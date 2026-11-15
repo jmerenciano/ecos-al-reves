@@ -8,6 +8,15 @@ window.APP_CONFIG = {
     "packs/"
   ],
 
+  /* Compra única «Quitar anuncios» (también desbloquea los temarios Especiales).
+     Crea un producto «no consumible» con este mismo ID en Google Play Console
+     (Monetizar → Productos → Productos integrados en la aplicación) y en
+     App Store Connect (Compras dentro de la app). El precio se pone en cada tienda. */
+  purchases: {
+    enabled: true,
+    removeAdsId: "remove_ads"
+  },
+
   /* Publicidad con Google AdMob (solo en las apps de Android e iOS; en la
      web no se muestran anuncios).
      1. Crea tu cuenta en https://admob.google.com y añade las dos apps.

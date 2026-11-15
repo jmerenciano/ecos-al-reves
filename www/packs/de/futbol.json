@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-futbol",
+  "lang": "de",
+  "name": "Fußball",
+  "emoji": "🥅",
+  "description": "Tore, Elfmeter und Fallrückzieher.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "Tor",
+      "Ball",
+      "Team",
+      "Ecke"
+    ],
+    "medium": [
+      "Torwart",
+      "Schiedsrichter",
+      "Elfmeter",
+      "Stadion"
+    ],
+    "hard": [
+      "Abseits",
+      "rote Karte",
+      "Fallrückzieher",
+      "Weltmeisterschaftsfinale"
+    ]
+  }
+}

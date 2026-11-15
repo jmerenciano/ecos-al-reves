@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-trabalenguas",
+  "lang": "pt",
+  "name": "Trava-línguas",
+  "emoji": "👅",
+  "description": "Já custam ao direito… imagina ao contrário!",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "três tigres tristes",
+      "a aranha arranha a rã",
+      "pedro pregou um prego",
+      "o rato roeu a rolha"
+    ],
+    "medium": [
+      "o peito do pé do pedro é preto",
+      "sabia que o sabiá sabia assobiar",
+      "a aranha arranha a rã a rã arranha a aranha",
+      "três pratos de trigo"
+    ],
+    "hard": [
+      "o rato roeu a roupa do rei de roma",
+      "três pratos de trigo para três tigres tristes",
+      "o tempo perguntou ao tempo quanto tempo o tempo tem",
+      "a vaca malhada foi molhada por outra vaca molhada e malhada"
+    ]
+  }
+}

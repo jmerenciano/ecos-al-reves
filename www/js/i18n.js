@@ -48,7 +48,8 @@
       fx_phone: "Teléfono", fx_phone_d: "Al revés, como por teléfono",
       fx_puzzle: "Puzle", fx_puzzle_d: "Cortado en 3 trozos, cada uno al revés",
       fx_alien: "Marciano", fx_alien_d: "Al revés, agudo y con voz robótica",
-      funnyVoices: "😂 ¡Escúchalo con otra voz!", bestMoments: "😂 Mejores momentos", privacy: "Privacidad", adsOptions: "Opciones de anuncios", watchToUnlock: "🎬 Ver vídeo y descargar", premium: "⭐ Especial", hitLines: "¡Pareces un loro profesional!|¡Hablas al revés como un experto!|¡Clavado! ¿Seguro que no eres de otro planeta?|¡Eso ha sonado increíble!", missLines: "Eso ha sonado a pato resfriado 🦆|¡Casi! Bueno… no tanto 😅|¿Eso era idioma marciano?|¡Ha sonado a robot sin pilas!"
+      funnyVoices: "😂 ¡Escúchalo con otra voz!", bestMoments: "😂 Mejores momentos", privacy: "Privacidad", adsOptions: "Opciones de anuncios", watchToUnlock: "🎬 Ver vídeo y descargar", premium: "⭐ Especial", hitLines: "¡Pareces un loro profesional!|¡Hablas al revés como un experto!|¡Clavado! ¿Seguro que no eres de otro planeta?|¡Eso ha sonado increíble!", missLines: "Eso ha sonado a pato resfriado 🦆|¡Casi! Bueno… no tanto 😅|¿Eso era idioma marciano?|¡Ha sonado a robot sin pilas!",
+      removeAds: "Quitar anuncios", removeAdsDesc: "Un solo pago para siempre: sin anuncios y con todos los temarios Especiales desbloqueados.", adsRemoved: "Sin anuncios y con todos los temarios Especiales. ¡Gracias por apoyar el juego!", restore: "Restaurar compras", thanks: "¡Gracias! Ya no verás anuncios 🎉", purchaseError: "No se pudo completar la compra. Inténtalo más tarde.", nothingToRestore: "No hay compras que restaurar en esta cuenta."
     },
     en: {
       langName: "English",
@@ -96,7 +97,8 @@
       fx_phone: "Phone", fx_phone_d: "Backwards, like on the phone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cut into 3 pieces, each one backwards",
       fx_alien: "Alien", fx_alien_d: "Backwards, squeaky and robotic",
-      funnyVoices: "😂 Hear it with a silly voice!", bestMoments: "😂 Funniest moments", privacy: "Privacy", adsOptions: "Ad options", watchToUnlock: "🎬 Watch a video to unlock", premium: "⭐ Special", hitLines: "You sound like a pro parrot!|Backwards-talking expert!|Spot on! Are you from another planet?|That sounded amazing!", missLines: "That sounded like a duck with a cold 🦆|So close! Well… not really 😅|Was that Martian?|You sound like a robot with flat batteries!"
+      funnyVoices: "😂 Hear it with a silly voice!", bestMoments: "😂 Funniest moments", privacy: "Privacy", adsOptions: "Ad options", watchToUnlock: "🎬 Watch a video to unlock", premium: "⭐ Special", hitLines: "You sound like a pro parrot!|Backwards-talking expert!|Spot on! Are you from another planet?|That sounded amazing!", missLines: "That sounded like a duck with a cold 🦆|So close! Well… not really 😅|Was that Martian?|You sound like a robot with flat batteries!",
+      removeAds: "Remove ads", removeAdsDesc: "One payment, forever: no ads and every Special word pack unlocked.", adsRemoved: "No ads and every Special pack unlocked. Thanks for supporting the game!", restore: "Restore purchases", thanks: "Thank you! No more ads 🎉", purchaseError: "The purchase couldn't be completed. Please try again later.", nothingToRestore: "There are no purchases to restore on this account."
     },
     ca: {
       langName: "Català / Valencià",
@@ -144,7 +146,8 @@
       fx_phone: "Telèfon", fx_phone_d: "Al revés, com per telèfon",
       fx_puzzle: "Trencaclosques", fx_puzzle_d: "Tallat en 3 trossos, cadascun al revés",
       fx_alien: "Marcià", fx_alien_d: "Al revés, agut i amb veu robòtica",
-      funnyVoices: "😂 Escolta-ho amb una altra veu!", bestMoments: "😂 Millors moments", privacy: "Privacitat", adsOptions: "Opcions d'anuncis", watchToUnlock: "🎬 Veure vídeo i descarregar", premium: "⭐ Especial", hitLines: "Sembles un lloro professional!|Parles al revés com un expert!|Clavat! Segur que no eres d'un altre planeta?|Això ha sonat increïble!", missLines: "Això ha sonat a ànec refredat 🦆|Quasi! Bé… no tant 😅|Això era idioma marcià?|Ha sonat a robot sense piles!"
+      funnyVoices: "😂 Escolta-ho amb una altra veu!", bestMoments: "😂 Millors moments", privacy: "Privacitat", adsOptions: "Opcions d'anuncis", watchToUnlock: "🎬 Veure vídeo i descarregar", premium: "⭐ Especial", hitLines: "Sembles un lloro professional!|Parles al revés com un expert!|Clavat! Segur que no eres d'un altre planeta?|Això ha sonat increïble!", missLines: "Això ha sonat a ànec refredat 🦆|Quasi! Bé… no tant 😅|Això era idioma marcià?|Ha sonat a robot sense piles!",
+      removeAds: "Llevar anuncis", removeAdsDesc: "Un sol pagament per sempre: sense anuncis i amb tots els temaris Especials desbloquejats.", adsRemoved: "Sense anuncis i amb tots els temaris Especials. Gràcies per donar suport al joc!", restore: "Restaurar compres", thanks: "Gràcies! Ja no veuràs anuncis 🎉", purchaseError: "No s'ha pogut completar la compra. Torna-ho a provar més tard.", nothingToRestore: "No hi ha compres per restaurar en aquest compte."
     },
     fr: {
       langName: "Français",
@@ -192,7 +195,8 @@
       fx_phone: "Téléphone", fx_phone_d: "À l'envers, comme au téléphone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Coupé en 3 morceaux, chacun à l'envers",
       fx_alien: "Martien", fx_alien_d: "À l'envers, aigu et robotique",
-      funnyVoices: "😂 Écoute-le avec une autre voix !", bestMoments: "😂 Meilleurs moments", privacy: "Confidentialité", adsOptions: "Options publicitaires", watchToUnlock: "🎬 Voir une vidéo et télécharger", premium: "⭐ Spécial", hitLines: "Tu parles comme un perroquet pro !|Expert du parler à l'envers !|Pile poil ! Tu viens d'une autre planète ?|C'était incroyable !", missLines: "On aurait dit un canard enrhumé 🦆|Presque ! Enfin… pas vraiment 😅|C'était du martien ?|On dirait un robot sans piles !"
+      funnyVoices: "😂 Écoute-le avec une autre voix !", bestMoments: "😂 Meilleurs moments", privacy: "Confidentialité", adsOptions: "Options publicitaires", watchToUnlock: "🎬 Voir une vidéo et télécharger", premium: "⭐ Spécial", hitLines: "Tu parles comme un perroquet pro !|Expert du parler à l'envers !|Pile poil ! Tu viens d'une autre planète ?|C'était incroyable !", missLines: "On aurait dit un canard enrhumé 🦆|Presque ! Enfin… pas vraiment 😅|C'était du martien ?|On dirait un robot sans piles !",
+      removeAds: "Supprimer les pubs", removeAdsDesc: "Un seul paiement, pour toujours : plus de pubs et tous les thèmes Spéciaux débloqués.", adsRemoved: "Plus de pubs et tous les thèmes Spéciaux débloqués. Merci de soutenir le jeu !", restore: "Restaurer les achats", thanks: "Merci ! Plus de pubs 🎉", purchaseError: "L'achat n'a pas pu aboutir. Réessaie plus tard.", nothingToRestore: "Aucun achat à restaurer sur ce compte."
     },
     pt: {
       langName: "Português",
@@ -240,7 +244,8 @@
       fx_phone: "Telefone", fx_phone_d: "Ao contrário, como ao telefone",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cortado em 3 pedaços, cada um ao contrário",
       fx_alien: "Marciano", fx_alien_d: "Ao contrário, agudo e robótico",
-      funnyVoices: "😂 Ouve com outra voz!", bestMoments: "😂 Melhores momentos", privacy: "Privacidade", adsOptions: "Opções de anúncios", watchToUnlock: "🎬 Ver vídeo e descarregar", premium: "⭐ Especial", hitLines: "Pareces um papagaio profissional!|Especialista em falar ao contrário!|Em cheio! Tens a certeza que não és de outro planeta?|Isso soou incrível!", missLines: "Isso soou a pato constipado 🦆|Quase! Bem… nem por isso 😅|Isso era marciano?|Pareces um robô sem pilhas!"
+      funnyVoices: "😂 Ouve com outra voz!", bestMoments: "😂 Melhores momentos", privacy: "Privacidade", adsOptions: "Opções de anúncios", watchToUnlock: "🎬 Ver vídeo e descarregar", premium: "⭐ Especial", hitLines: "Pareces um papagaio profissional!|Especialista em falar ao contrário!|Em cheio! Tens a certeza que não és de outro planeta?|Isso soou incrível!", missLines: "Isso soou a pato constipado 🦆|Quase! Bem… nem por isso 😅|Isso era marciano?|Pareces um robô sem pilhas!",
+      removeAds: "Remover anúncios", removeAdsDesc: "Um só pagamento para sempre: sem anúncios e com todos os temas Especiais desbloqueados.", adsRemoved: "Sem anúncios e com todos os temas Especiais. Obrigado por apoiares o jogo!", restore: "Restaurar compras", thanks: "Obrigado! Já não vais ver anúncios 🎉", purchaseError: "Não foi possível concluir a compra. Tenta mais tarde.", nothingToRestore: "Não há compras para restaurar nesta conta."
     },
     it: {
       langName: "Italiano",
@@ -288,7 +293,8 @@
       fx_phone: "Telefono", fx_phone_d: "Al contrario, come al telefono",
       fx_puzzle: "Puzzle", fx_puzzle_d: "Tagliato in 3 pezzi, ognuno al contrario",
       fx_alien: "Marziano", fx_alien_d: "Al contrario, acuto e robotico",
-      funnyVoices: "😂 Ascoltalo con un'altra voce!", bestMoments: "😂 Momenti migliori", privacy: "Privacy", adsOptions: "Opzioni annunci", watchToUnlock: "🎬 Guarda un video e scarica", premium: "⭐ Speciale", hitLines: "Sembri un pappagallo professionista!|Esperto del parlare al contrario!|Perfetto! Sei sicuro di non venire da un altro pianeta?|È suonato benissimo!", missLines: "Sembrava un'anatra raffreddata 🦆|Quasi! Beh… non proprio 😅|Era marziano?|Sembri un robot scarico!"
+      funnyVoices: "😂 Ascoltalo con un'altra voce!", bestMoments: "😂 Momenti migliori", privacy: "Privacy", adsOptions: "Opzioni annunci", watchToUnlock: "🎬 Guarda un video e scarica", premium: "⭐ Speciale", hitLines: "Sembri un pappagallo professionista!|Esperto del parlare al contrario!|Perfetto! Sei sicuro di non venire da un altro pianeta?|È suonato benissimo!", missLines: "Sembrava un'anatra raffreddata 🦆|Quasi! Beh… non proprio 😅|Era marziano?|Sembri un robot scarico!",
+      removeAds: "Rimuovi pubblicità", removeAdsDesc: "Un solo pagamento per sempre: niente pubblicità e tutti i temi Speciali sbloccati.", adsRemoved: "Niente pubblicità e tutti i temi Speciali sbloccati. Grazie per sostenere il gioco!", restore: "Ripristina acquisti", thanks: "Grazie! Niente più pubblicità 🎉", purchaseError: "Impossibile completare l'acquisto. Riprova più tardi.", nothingToRestore: "Non ci sono acquisti da ripristinare su questo account."
     },
     de: {
       langName: "Deutsch",
@@ -336,7 +342,8 @@
       fx_phone: "Telefon", fx_phone_d: "Rückwärts wie am Telefon",
       fx_puzzle: "Puzzle", fx_puzzle_d: "In 3 Stücke geschnitten, jedes rückwärts",
       fx_alien: "Marsmensch", fx_alien_d: "Rückwärts, hoch und robotisch",
-      funnyVoices: "😂 Hör es mit lustiger Stimme!", bestMoments: "😂 Lustigste Momente", privacy: "Datenschutz", adsOptions: "Werbeeinstellungen", watchToUnlock: "🎬 Video ansehen und laden", premium: "⭐ Spezial", hitLines: "Du klingst wie ein Profi-Papagei!|Rückwärts-Sprech-Experte!|Volltreffer! Kommst du von einem anderen Planeten?|Das klang großartig!", missLines: "Das klang wie eine erkältete Ente 🦆|Fast! Na ja… nicht ganz 😅|War das Marsianisch?|Wie ein Roboter mit leeren Batterien!"
+      funnyVoices: "😂 Hör es mit lustiger Stimme!", bestMoments: "😂 Lustigste Momente", privacy: "Datenschutz", adsOptions: "Werbeeinstellungen", watchToUnlock: "🎬 Video ansehen und laden", premium: "⭐ Spezial", hitLines: "Du klingst wie ein Profi-Papagei!|Rückwärts-Sprech-Experte!|Volltreffer! Kommst du von einem anderen Planeten?|Das klang großartig!", missLines: "Das klang wie eine erkältete Ente 🦆|Fast! Na ja… nicht ganz 😅|War das Marsianisch?|Wie ein Roboter mit leeren Batterien!",
+      removeAds: "Werbung entfernen", removeAdsDesc: "Einmal zahlen, für immer: keine Werbung und alle Spezial-Wortpakete freigeschaltet.", adsRemoved: "Keine Werbung und alle Spezial-Pakete freigeschaltet. Danke für deine Unterstützung!", restore: "Käufe wiederherstellen", thanks: "Danke! Keine Werbung mehr 🎉", purchaseError: "Der Kauf konnte nicht abgeschlossen werden. Versuch es später nochmal.", nothingToRestore: "Für dieses Konto gibt es keine Käufe zum Wiederherstellen."
     }
   };
 

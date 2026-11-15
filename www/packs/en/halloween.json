@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-halloween",
+  "lang": "en",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Witches, ghosts and pumpkins.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "witch",
+      "ghost",
+      "bat",
+      "mummy"
+    ],
+    "medium": [
+      "pumpkin",
+      "skeleton",
+      "vampire",
+      "spider web"
+    ],
+    "hard": [
+      "trick or treat",
+      "haunted house",
+      "flying broomstick",
+      "werewolf"
+    ]
+  }
+}

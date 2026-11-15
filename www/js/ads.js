@@ -21,8 +21,10 @@
 
   const ids = () => ((cfg.useTestAds ? cfg.testIds : cfg.ids) || {})[platform] || {};
 
+  const noAds = () => !!(window.Purchases && window.Purchases.adsRemoved);
+
   async function init() {
-    if (!native || !cfg.enabled) return;
+    if (!native || !cfg.enabled || noAds()) return;
     AdMob = (cap.Plugins && cap.Plugins.AdMob) || (cap.registerPlugin && cap.registerPlugin("AdMob"));
     if (!AdMob) return;
     try {
@@ -72,6 +74,7 @@
 
   /* Se llama al terminar cada turno. isLast: fin de la partida. */
   async function afterTurn(isLast) {
+    if (noAds()) return;
     turns++;
     const waited = (Date.now() - lastShown) / 1000;
     const every = cfg.interstitialEveryTurns || 4;
@@ -85,7 +88,7 @@
   /* Vídeo con recompensa. Devuelve true si hay que dar el premio.
      Si el anuncio no carga, damos el premio igualmente: no es culpa del jugador. */
   async function rewarded() {
-    if (!ready) return true;
+    if (!ready || noAds()) return true;
     if (!rewardedReady) await preloadRewarded();
     if (!rewardedReady) return true;
     rewardedReady = false;
@@ -120,7 +123,7 @@
     afterTurn,
     rewarded,
     showPrivacyOptions,
-    get available() { return ready; },
+    get available() { return ready && !noAds(); },
     get hasPrivacyOptions() { return ready && privacyOptions; }
   };
 })();

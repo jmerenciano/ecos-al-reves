@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-navidad",
+  "lang": "de",
+  "name": "Weihnachten",
+  "emoji": "🎄",
+  "description": "Geschenke, Schnee und Lebkuchen.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "Geschenk",
+      "Schnee",
+      "Stern",
+      "Engel"
+    ],
+    "medium": [
+      "Rentier",
+      "Schneemann",
+      "Weihnachtsmann",
+      "Tannenbaum"
+    ],
+    "hard": [
+      "Frohe Weihnachten",
+      "Lebkuchenhaus",
+      "Adventskalender",
+      "Nordpol"
+    ]
+  }
+}

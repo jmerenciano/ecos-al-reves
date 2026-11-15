@@ -43,6 +43,9 @@ Ecos al Revés es el juego de voz que convierte cualquier reunión en un ataque 
 🌍 7 IDIOMAS
 Español, English, Català/Valencià, Français, Português, Italiano y Deutsch.
 
+🎄 TEMARIOS ESPECIALES
+Navidad, Halloween, Fútbol y Trabalenguas: desbloquéalos con un vídeo o quita los anuncios para tenerlos todos.
+
 🔒 Tu voz no se guarda ni se envía: todo ocurre en tu móvil.
 
 ---
@@ -81,6 +84,9 @@ Ecos al Revés is the voice game that turns any get-together into a fit of giggl
 
 🌍 7 LANGUAGES
 English, Español, Català/Valencià, Français, Português, Italiano and Deutsch.
+
+🎄 SPECIAL PACKS
+Christmas, Halloween, Football and Tongue twisters: unlock them with a video, or remove ads to get them all.
 
 🔒 Your voice is never stored or sent: everything happens on your phone.
 

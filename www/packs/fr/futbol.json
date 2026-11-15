@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-futbol",
+  "lang": "fr",
+  "name": "Football",
+  "emoji": "🥅",
+  "description": "Buts, penalties et retournés.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "but",
+      "ballon",
+      "équipe",
+      "corner"
+    ],
+    "medium": [
+      "gardien",
+      "arbitre",
+      "penalty",
+      "stade"
+    ],
+    "hard": [
+      "hors-jeu",
+      "carton rouge",
+      "retourné acrobatique",
+      "finale de coupe du monde"
+    ]
+  }
+}

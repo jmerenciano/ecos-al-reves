@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-futbol",
+  "lang": "ca",
+  "name": "Futbol",
+  "emoji": "🥅",
+  "description": "Gols, penals i xilenes.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "gol",
+      "porter",
+      "pilota",
+      "córner"
+    ],
+    "medium": [
+      "davanter",
+      "àrbitre",
+      "penal",
+      "estadi"
+    ],
+    "hard": [
+      "fora de joc",
+      "targeta roja",
+      "xilena espectacular",
+      "final del mundial"
+    ]
+  }
+}

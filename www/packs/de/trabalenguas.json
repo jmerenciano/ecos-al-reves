@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-trabalenguas",
+  "lang": "de",
+  "name": "Zungenbrecher",
+  "emoji": "👅",
+  "description": "Schon vorwärts schwer… und jetzt rückwärts!",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "Fischers Fritz",
+      "Blaukraut bleibt Blaukraut",
+      "zwei Zwetschgen",
+      "Brautkleid bleibt Brautkleid"
+    ],
+    "medium": [
+      "Fischers Fritz fischt frische Fische",
+      "Blaukraut bleibt Blaukraut und Brautkleid bleibt Brautkleid",
+      "zwischen zwei Zwetschgenzweigen",
+      "kleine Kinder können keine kleinen Kirschkerne knacken"
+    ],
+    "hard": [
+      "Fischers Fritz fischt frische Fische frische Fische fischt Fischers Fritz",
+      "zwischen zwei Zwetschgenzweigen zwitschern zwei Schwalben",
+      "der Cottbuser Postkutscher putzt den Cottbuser Postkutschkasten",
+      "wenn Fliegen hinter Fliegen fliegen fliegen Fliegen Fliegen nach"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-trabalenguas",
+  "lang": "fr",
+  "name": "Virelangues",
+  "emoji": "👅",
+  "description": "Déjà durs à l'endroit… alors à l'envers !",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "trois tortues",
+      "six saucissons secs",
+      "pruneau cuit pruneau cru",
+      "chat chou chien"
+    ],
+    "medium": [
+      "les chaussettes de l'archiduchesse",
+      "un chasseur sachant chasser",
+      "ton thé t'a-t-il ôté ta toux",
+      "cinq chiens chassent six chats"
+    ],
+    "hard": [
+      "les chaussettes de l'archiduchesse sont-elles sèches",
+      "un chasseur sachant chasser sait chasser sans son chien",
+      "trois tortues trottaient sur un trottoir très étroit",
+      "si six scies scient six cyprès"
+    ]
+  }
+}

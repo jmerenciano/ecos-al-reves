@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-trabalenguas",
+  "lang": "it",
+  "name": "Scioglilingua",
+  "emoji": "👅",
+  "description": "Già difficili al dritto… figurati al contrario!",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "tigre contro tigre",
+      "trentatré trentini",
+      "sotto la panca",
+      "apelle figlio di apollo"
+    ],
+    "medium": [
+      "sopra la panca la capra campa",
+      "trentatré trentini entrarono a trento",
+      "stanno stretti sotto i letti",
+      "chi ama chiama chi ama"
+    ],
+    "hard": [
+      "sopra la panca la capra campa sotto la panca la capra crepa",
+      "trentatré trentini entrarono a trento tutti e trentatré trotterellando",
+      "apelle figlio di apollo fece una palla di pelle di pollo",
+      "stanno stretti sotto i letti sette spettri a denti stretti"
+    ]
+  }
+}

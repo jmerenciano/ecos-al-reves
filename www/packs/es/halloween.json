@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-halloween",
+  "lang": "es",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Brujas, fantasmas y calabazas.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "bruja",
+      "fantasma",
+      "calabaza",
+      "momia"
+    ],
+    "medium": [
+      "murciélago",
+      "esqueleto",
+      "vampiro",
+      "telaraña"
+    ],
+    "hard": [
+      "truco o trato",
+      "casa encantada",
+      "escoba voladora",
+      "hombre lobo"
+    ]
+  }
+}

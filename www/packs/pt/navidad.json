@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-navidad",
+  "lang": "pt",
+  "name": "Natal",
+  "emoji": "🎄",
+  "description": "Prendas, neve e bolo-rei.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "prenda",
+      "neve",
+      "estrela",
+      "presépio"
+    ],
+    "medium": [
+      "rena",
+      "boneco de neve",
+      "pai natal",
+      "árvore de natal"
+    ],
+    "hard": [
+      "feliz natal",
+      "bolo-rei",
+      "consoada em família",
+      "polo norte"
+    ]
+  }
+}

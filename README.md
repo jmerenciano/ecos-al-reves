@@ -51,7 +51,7 @@ Un juego de risas garantizadas para jugar en familia, con amigos o en fiestas. S
   1. Crea `www/packs/<idioma>/<nombre>.json` (copia uno existente como plantilla).
   2. Ejecuta `npm run packs` para regenerar el catálogo.
   3. Haz commit y push.
-- **Especiales** (`"premium": true`): en las apps se desbloquean viendo un vídeo con recompensa. En la web se descargan gratis.
+- **Especiales** (`"premium": true`): Navidad 🎄, Halloween 🎃, Fútbol 🥅 y Trabalenguas 👅 en los 7 idiomas, más Profesiones y Música en español e inglés. En las apps se desbloquean viendo un vídeo con recompensa (o todos a la vez con «Quitar anuncios»). En la web se descargan gratis.
 - **Propios**: desde *Gestionar temarios* puedes crearlos, exportarlos (compartir archivo o copiar texto) e importarlos.
 
 Si un temario lleva `"builtin": true`, se incluye dentro de la app al ejecutar `npm run packs`.
@@ -75,6 +75,14 @@ Solo se piden anuncios aptos para todos los públicos (clasificación G). En Eur
 5. Ejecuta `npm run sync` para aplicarlos a los proyectos nativos.
 
 ⚠️ Mientras pruebas, deja `useTestAds: true`. Si pulsas tus propios anuncios reales, AdMob puede cerrarte la cuenta.
+
+### Compra «Quitar anuncios»
+
+Pago único (producto **no consumible**) que quita los anuncios para siempre y desbloquea todos los temarios Especiales. No necesita servidor propio: lo gestiona el plugin `cordova-plugin-purchase` con Google Play y App Store, e incluye el botón **Restaurar compras** que exige Apple.
+
+1. **Google Play Console** → tu app → *Monetizar → Productos → Productos integrados en la aplicación* → crea `remove_ads` y ponle precio (por ejemplo 2,99 €). Para que aparezca, la app tiene que estar subida al menos a la pista de *Pruebas internas*.
+2. **App Store Connect** → tu app → *Compras dentro de la app* → crea un producto **No consumible** con el ID `remove_ads`. En Xcode, añade la capacidad **In-App Purchase** (*Signing & Capabilities → + Capability*).
+3. Si quieres usar otro ID, cámbialo en `www/js/config.js` (`purchases.removeAdsId`).
 
 La política de privacidad está en `www/privacy.html` (se publica en `…/ecos-al-reves/privacy.html`). Los textos de las fichas de las tiendas en los 7 idiomas están en [`docs/fichas-tiendas.md`](docs/fichas-tiendas.md).
 
@@ -123,6 +131,7 @@ www/                 la app (HTML, CSS, JS): es lo que se publica y se empaqueta
   js/packs.js        temarios: catálogo, descarga, importar y exportar
   js/config.js       catálogo online y configuración de anuncios
   js/ads.js          anuncios AdMob (solo en las apps)
+  js/purchases.js    compra «Quitar anuncios»
   privacy.html       política de privacidad
   packs/             temarios en JSON + catalog.json
 scripts/             generador del catálogo y configuración nativa (micrófono y AdMob)

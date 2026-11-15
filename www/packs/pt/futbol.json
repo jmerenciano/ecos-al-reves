@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-futbol",
+  "lang": "pt",
+  "name": "Futebol",
+  "emoji": "🥅",
+  "description": "Golos, penáltis e bicicletas.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "golo",
+      "bola",
+      "equipa",
+      "canto"
+    ],
+    "medium": [
+      "guarda-redes",
+      "árbitro",
+      "penálti",
+      "estádio"
+    ],
+    "hard": [
+      "fora de jogo",
+      "cartão vermelho",
+      "pontapé de bicicleta",
+      "final do mundial"
+    ]
+  }
+}

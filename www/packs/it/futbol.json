@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-futbol",
+  "lang": "it",
+  "name": "Calcio",
+  "emoji": "🥅",
+  "description": "Gol, rigori e rovesciate.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "gol",
+      "palla",
+      "squadra",
+      "corner"
+    ],
+    "medium": [
+      "portiere",
+      "arbitro",
+      "rigore",
+      "stadio"
+    ],
+    "hard": [
+      "fuorigioco",
+      "cartellino rosso",
+      "rovesciata spettacolare",
+      "finale dei mondiali"
+    ]
+  }
+}

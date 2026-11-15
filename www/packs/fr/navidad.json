@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-navidad",
+  "lang": "fr",
+  "name": "Noël",
+  "emoji": "🎄",
+  "description": "Chants, cadeaux et neige.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "cadeau",
+      "neige",
+      "étoile",
+      "sapin"
+    ],
+    "medium": [
+      "renne",
+      "bonhomme de neige",
+      "père noël",
+      "guirlande"
+    ],
+    "hard": [
+      "joyeux noël",
+      "bûche de noël",
+      "chaussette de noël",
+      "pôle nord"
+    ]
+  }
+}

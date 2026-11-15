@@ -183,6 +183,15 @@
       <button class="btn ghost wide" id="manage">📚 ${t("managePacks")}</button>
     </section>
 
+    ${Purchases.available || Purchases.adsRemoved ? `
+    <section class="card noads ${Purchases.adsRemoved ? "done" : ""}">
+      ${Purchases.adsRemoved
+        ? `<p class="noads-done">✅ ${t("adsRemoved")}</p>`
+        : `<div><h2>🚫 ${t("removeAds")}</h2><p class="hint left">${t("removeAdsDesc")}</p></div>
+           <button class="btn primary wide" id="buy">${t("removeAds")}${Purchases.price ? " · " + esc(Purchases.price) : ""}</button>
+           <button class="link-btn" id="restore">${t("restore")}</button>`}
+    </section>` : ""}
+
     <footer class="foot">
       <a href="privacy.html" target="_blank" rel="noopener">${t("privacy")}</a>
       ${Ads.hasPrivacyOptions ? `<button class="link-btn" id="ad-opts">${t("adsOptions")}</button>` : ""}
@@ -223,6 +232,18 @@
       S.selectedPacks = cur; saveS(); renderSetup();
     });
     $("#manage").onclick = renderPacks;
+    const buy = $("#buy");
+    if (buy) buy.onclick = async () => {
+      buy.disabled = true;
+      try { if (await Purchases.buy() && Purchases.adsRemoved) toast(t("thanks")); }
+      catch (_) { toast(t("purchaseError")); }
+      buy.disabled = false;
+    };
+    const rs = $("#restore");
+    if (rs) rs.onclick = async () => {
+      try { toast(await Purchases.restore() ? t("thanks") : t("nothingToRestore")); }
+      catch (_) { toast(t("purchaseError")); }
+    };
     const ao = $("#ad-opts");
     if (ao) ao.onclick = () => Ads.showPrivacyOptions();
     $("#start").onclick = startGame;
@@ -303,7 +324,7 @@
     if (!list.length) { box.innerHTML = `<p class="hint">—</p>`; return; }
     box.innerHTML = `<ul class="pack-list">${list.map(e => {
       const have = Packs.get(e.id);
-      const locked = !have && e.premium && Ads.available;
+      const locked = !have && e.premium && Ads.available && !Purchases.adsRemoved;
       const label = !have ? (locked ? t("watchToUnlock") : t("download")) : (have.version < e.version ? t("update") : t("downloaded"));
       return `<li>
         <span class="pack-emoji">${esc(e.emoji)}</span>
@@ -314,7 +335,7 @@
     box.querySelectorAll("[data-dl]").forEach(b => b.onclick = async () => {
       const entry = catalogCache.find(e => e.id === b.dataset.dl);
       b.disabled = true;
-      if (entry.premium && !Packs.get(entry.id) && Ads.available) {
+      if (entry.premium && !Packs.get(entry.id) && Ads.available && !Purchases.adsRemoved) {
         const ok = await Ads.rewarded();
         if (!ok) { b.disabled = false; return; }
       }
@@ -755,5 +776,8 @@
   renderSetup();
   // Los anuncios se preparan en segundo plano; al estar listos se refresca
   // la pantalla de ajustes para mostrar "Opciones de anuncios" si hace falta.
-  Ads.init().then(() => { if (!game && $("#start")) renderSetup(); });
+  // Primero la tienda (para saber si ya compró «Quitar anuncios») y luego los anuncios.
+  const refreshSetup = () => { if (!game && $("#start")) renderSetup(); };
+  Purchases.onChange(refreshSetup);
+  Purchases.init().then(() => Ads.init()).then(refreshSetup);
 })();

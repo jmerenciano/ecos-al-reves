@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-navidad",
+  "lang": "ca",
+  "name": "Nadal",
+  "emoji": "🎄",
+  "description": "Nadales, regals i torró.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "regal",
+      "neu",
+      "estrella",
+      "torró"
+    ],
+    "medium": [
+      "ren",
+      "betlem",
+      "pare noel",
+      "arbre de nadal"
+    ],
+    "hard": [
+      "bon nadal",
+      "reis d'orient",
+      "caga tió",
+      "sopar de nadal"
+    ]
+  }
+}

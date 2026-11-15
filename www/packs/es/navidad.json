@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-navidad",
+  "lang": "es",
+  "name": "Navidad",
+  "emoji": "🎄",
+  "description": "Villancicos, regalos y turrón.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "belén",
+      "regalo",
+      "nieve",
+      "turrón"
+    ],
+    "medium": [
+      "villancico",
+      "reno",
+      "muñeco de nieve",
+      "papá noel"
+    ],
+    "hard": [
+      "reyes magos de oriente",
+      "feliz navidad",
+      "campanas sobre campanas",
+      "cena de nochebuena"
+    ]
+  }
+}

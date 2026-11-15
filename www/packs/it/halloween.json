@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-halloween",
+  "lang": "it",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Streghe, fantasmi e zucche.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "strega",
+      "fantasma",
+      "zucca",
+      "mummia"
+    ],
+    "medium": [
+      "pipistrello",
+      "scheletro",
+      "vampiro",
+      "ragnatela"
+    ],
+    "hard": [
+      "dolcetto o scherzetto",
+      "casa stregata",
+      "scopa volante",
+      "lupo mannaro"
+    ]
+  }
+}

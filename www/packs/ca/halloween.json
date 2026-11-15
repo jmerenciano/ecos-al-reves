@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-halloween",
+  "lang": "ca",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Bruixes, fantasmes i carabasses.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "bruixa",
+      "fantasma",
+      "carabassa",
+      "mòmia"
+    ],
+    "medium": [
+      "ratpenat",
+      "esquelet",
+      "vampir",
+      "teranyina"
+    ],
+    "hard": [
+      "truc o tracte",
+      "casa encantada",
+      "escombra voladora",
+      "home llop"
+    ]
+  }
+}

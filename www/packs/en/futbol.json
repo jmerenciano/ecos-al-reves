@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-futbol",
+  "lang": "en",
+  "name": "Football",
+  "emoji": "🥅",
+  "description": "Goals, penalties and bicycle kicks.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "goal",
+      "ball",
+      "kick",
+      "team"
+    ],
+    "medium": [
+      "goalkeeper",
+      "referee",
+      "penalty",
+      "stadium"
+    ],
+    "hard": [
+      "offside",
+      "red card",
+      "bicycle kick",
+      "world cup final"
+    ]
+  }
+}

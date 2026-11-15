@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-futbol",
+  "lang": "es",
+  "name": "Fútbol",
+  "emoji": "🥅",
+  "description": "Goles, penaltis y chilenas.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "gol",
+      "portero",
+      "córner",
+      "balón"
+    ],
+    "medium": [
+      "delantero",
+      "árbitro",
+      "penalti",
+      "estadio"
+    ],
+    "hard": [
+      "fuera de juego",
+      "tarjeta roja",
+      "chilena espectacular",
+      "final del mundial"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-halloween",
+  "lang": "pt",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Bruxas, fantasmas e abóboras.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "bruxa",
+      "fantasma",
+      "abóbora",
+      "múmia"
+    ],
+    "medium": [
+      "morcego",
+      "esqueleto",
+      "vampiro",
+      "teia de aranha"
+    ],
+    "hard": [
+      "doçura ou travessura",
+      "casa assombrada",
+      "vassoura voadora",
+      "lobisomem"
+    ]
+  }
+}

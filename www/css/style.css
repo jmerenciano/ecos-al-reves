@@ -296,6 +296,10 @@ textarea.code { font: 12px/1.4 ui-monospace, Menlo, monospace; resize: vertical;
 .moments li { display: flex; align-items: center; gap: 8px; background: color-mix(in srgb, var(--pc) 10%, white); border-radius: 16px; padding: 8px; }
 .moments b, .moments small { display: block; }
 .premium { font-size: 0.72rem; background: var(--sun); border-radius: 999px; padding: 2px 8px; vertical-align: middle; white-space: nowrap; }
+.noads { border: 3px solid var(--sun); }
+.noads.done { border-color: var(--mint); }
+.noads-done { margin: 0; font-weight: 800; text-align: center; }
+.hint.left { text-align: left; }
 .foot { display: flex; justify-content: center; gap: 16px; align-items: center; font-weight: 700; font-size: 0.9rem; }
 .foot a { color: var(--ink-soft); }
 

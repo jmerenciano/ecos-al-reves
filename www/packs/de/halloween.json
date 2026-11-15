@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-halloween",
+  "lang": "de",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Hexen, Geister und Kürbisse.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "Hexe",
+      "Geist",
+      "Kürbis",
+      "Mumie"
+    ],
+    "medium": [
+      "Fledermaus",
+      "Skelett",
+      "Vampir",
+      "Spinnennetz"
+    ],
+    "hard": [
+      "Süßes oder Saures",
+      "Spukhaus",
+      "fliegender Besen",
+      "Werwolf"
+    ]
+  }
+}

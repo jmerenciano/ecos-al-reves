@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-trabalenguas",
+  "lang": "ca",
+  "name": "Embarbussaments",
+  "emoji": "👅",
+  "description": "Si ja costen del dret… imagina't al revés!",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "duc pa sec al sac",
+      "setze jutges",
+      "plou poc",
+      "un plat blanc"
+    ],
+    "medium": [
+      "plou poc però per lo poc que plou plou prou",
+      "en Pere Pons pinta portes",
+      "setze jutges d'un jutjat",
+      "una gallina xica pica pellarica"
+    ],
+    "hard": [
+      "setze jutges d'un jutjat mengen fetge d'un penjat",
+      "un plat blanc pla ple de pebre negre està",
+      "duc pa sec al sac i sec al sac duc pa",
+      "una gallina xica pica pellarica camilla en gorja"
+    ]
+  }
+}

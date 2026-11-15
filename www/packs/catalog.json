@@ -50,6 +50,54 @@
       "path": "ca/deportes.json"
     },
     {
+      "id": "ca-futbol",
+      "lang": "ca",
+      "name": "Futbol",
+      "emoji": "🥅",
+      "description": "Gols, penals i xilenes.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "ca/futbol.json"
+    },
+    {
+      "id": "ca-halloween",
+      "lang": "ca",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Bruixes, fantasmes i carabasses.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "ca/halloween.json"
+    },
+    {
+      "id": "ca-navidad",
+      "lang": "ca",
+      "name": "Nadal",
+      "emoji": "🎄",
+      "description": "Nadales, regals i torró.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "ca/navidad.json"
+    },
+    {
+      "id": "ca-trabalenguas",
+      "lang": "ca",
+      "name": "Embarbussaments",
+      "emoji": "👅",
+      "description": "Si ja costen del dret… imagina't al revés!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "ca/trabalenguas.json"
+    },
+    {
       "id": "ca-viajes",
       "lang": "ca",
       "name": "Viatges i llocs",
@@ -108,6 +156,54 @@
       "builtin": true,
       "premium": false,
       "path": "de/deportes.json"
+    },
+    {
+      "id": "de-futbol",
+      "lang": "de",
+      "name": "Fußball",
+      "emoji": "🥅",
+      "description": "Tore, Elfmeter und Fallrückzieher.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "de/futbol.json"
+    },
+    {
+      "id": "de-halloween",
+      "lang": "de",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Hexen, Geister und Kürbisse.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "de/halloween.json"
+    },
+    {
+      "id": "de-navidad",
+      "lang": "de",
+      "name": "Weihnachten",
+      "emoji": "🎄",
+      "description": "Geschenke, Schnee und Lebkuchen.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "de/navidad.json"
+    },
+    {
+      "id": "de-trabalenguas",
+      "lang": "de",
+      "name": "Zungenbrecher",
+      "emoji": "👅",
+      "description": "Schon vorwärts schwer… und jetzt rückwärts!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "de/trabalenguas.json"
     },
     {
       "id": "de-viajes",
@@ -170,6 +266,30 @@
       "path": "en/deportes.json"
     },
     {
+      "id": "en-futbol",
+      "lang": "en",
+      "name": "Football",
+      "emoji": "🥅",
+      "description": "Goals, penalties and bicycle kicks.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "en/futbol.json"
+    },
+    {
+      "id": "en-halloween",
+      "lang": "en",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Witches, ghosts and pumpkins.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "en/halloween.json"
+    },
+    {
       "id": "en-musica",
       "lang": "en",
       "name": "Music",
@@ -180,6 +300,18 @@
       "builtin": false,
       "premium": true,
       "path": "en/musica.json"
+    },
+    {
+      "id": "en-navidad",
+      "lang": "en",
+      "name": "Christmas",
+      "emoji": "🎄",
+      "description": "Carols, presents and snow.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "en/navidad.json"
     },
     {
       "id": "en-profesiones",
@@ -266,6 +398,30 @@
       "path": "es/deportes.json"
     },
     {
+      "id": "es-futbol",
+      "lang": "es",
+      "name": "Fútbol",
+      "emoji": "🥅",
+      "description": "Goles, penaltis y chilenas.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "es/futbol.json"
+    },
+    {
+      "id": "es-halloween",
+      "lang": "es",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Brujas, fantasmas y calabazas.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "es/halloween.json"
+    },
+    {
       "id": "es-musica",
       "lang": "es",
       "name": "Música",
@@ -276,6 +432,18 @@
       "builtin": false,
       "premium": true,
       "path": "es/musica.json"
+    },
+    {
+      "id": "es-navidad",
+      "lang": "es",
+      "name": "Navidad",
+      "emoji": "🎄",
+      "description": "Villancicos, regalos y turrón.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "es/navidad.json"
     },
     {
       "id": "es-profesiones",
@@ -362,6 +530,54 @@
       "path": "fr/deportes.json"
     },
     {
+      "id": "fr-futbol",
+      "lang": "fr",
+      "name": "Football",
+      "emoji": "🥅",
+      "description": "Buts, penalties et retournés.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "fr/futbol.json"
+    },
+    {
+      "id": "fr-halloween",
+      "lang": "fr",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Sorcières, fantômes et citrouilles.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "fr/halloween.json"
+    },
+    {
+      "id": "fr-navidad",
+      "lang": "fr",
+      "name": "Noël",
+      "emoji": "🎄",
+      "description": "Chants, cadeaux et neige.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "fr/navidad.json"
+    },
+    {
+      "id": "fr-trabalenguas",
+      "lang": "fr",
+      "name": "Virelangues",
+      "emoji": "👅",
+      "description": "Déjà durs à l'endroit… alors à l'envers !",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "fr/trabalenguas.json"
+    },
+    {
       "id": "fr-viajes",
       "lang": "fr",
       "name": "Voyages et lieux",
@@ -422,6 +638,54 @@
       "path": "it/deportes.json"
     },
     {
+      "id": "it-futbol",
+      "lang": "it",
+      "name": "Calcio",
+      "emoji": "🥅",
+      "description": "Gol, rigori e rovesciate.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "it/futbol.json"
+    },
+    {
+      "id": "it-halloween",
+      "lang": "it",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Streghe, fantasmi e zucche.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "it/halloween.json"
+    },
+    {
+      "id": "it-navidad",
+      "lang": "it",
+      "name": "Natale",
+      "emoji": "🎄",
+      "description": "Regali, neve e panettone.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "it/navidad.json"
+    },
+    {
+      "id": "it-trabalenguas",
+      "lang": "it",
+      "name": "Scioglilingua",
+      "emoji": "👅",
+      "description": "Già difficili al dritto… figurati al contrario!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "it/trabalenguas.json"
+    },
+    {
       "id": "it-viajes",
       "lang": "it",
       "name": "Viaggi e luoghi",
@@ -480,6 +744,54 @@
       "builtin": true,
       "premium": false,
       "path": "pt/deportes.json"
+    },
+    {
+      "id": "pt-futbol",
+      "lang": "pt",
+      "name": "Futebol",
+      "emoji": "🥅",
+      "description": "Golos, penáltis e bicicletas.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "pt/futbol.json"
+    },
+    {
+      "id": "pt-halloween",
+      "lang": "pt",
+      "name": "Halloween",
+      "emoji": "🎃",
+      "description": "Bruxas, fantasmas e abóboras.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "pt/halloween.json"
+    },
+    {
+      "id": "pt-navidad",
+      "lang": "pt",
+      "name": "Natal",
+      "emoji": "🎄",
+      "description": "Prendas, neve e bolo-rei.",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "pt/navidad.json"
+    },
+    {
+      "id": "pt-trabalenguas",
+      "lang": "pt",
+      "name": "Trava-línguas",
+      "emoji": "👅",
+      "description": "Já custam ao direito… imagina ao contrário!",
+      "version": 1,
+      "count": 12,
+      "builtin": false,
+      "premium": true,
+      "path": "pt/trabalenguas.json"
     },
     {
       "id": "pt-viajes",

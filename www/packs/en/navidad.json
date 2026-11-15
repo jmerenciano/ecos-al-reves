@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-navidad",
+  "lang": "en",
+  "name": "Christmas",
+  "emoji": "🎄",
+  "description": "Carols, presents and snow.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "gift",
+      "snow",
+      "elf",
+      "star"
+    ],
+    "medium": [
+      "reindeer",
+      "snowman",
+      "santa claus",
+      "mistletoe"
+    ],
+    "hard": [
+      "merry christmas",
+      "jingle bells",
+      "christmas pudding",
+      "north pole"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-navidad",
+  "lang": "it",
+  "name": "Natale",
+  "emoji": "🎄",
+  "description": "Regali, neve e panettone.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "regalo",
+      "neve",
+      "stella",
+      "presepe"
+    ],
+    "medium": [
+      "renna",
+      "pupazzo di neve",
+      "babbo natale",
+      "albero di natale"
+    ],
+    "hard": [
+      "buon natale",
+      "panettone e pandoro",
+      "calza della befana",
+      "polo nord"
+    ]
+  }
+}

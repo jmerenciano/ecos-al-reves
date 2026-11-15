@@ -1,0 +1,32 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-halloween",
+  "lang": "fr",
+  "name": "Halloween",
+  "emoji": "🎃",
+  "description": "Sorcières, fantômes et citrouilles.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "premium": true,
+  "words": {
+    "easy": [
+      "sorcière",
+      "fantôme",
+      "momie",
+      "citrouille"
+    ],
+    "medium": [
+      "chauve-souris",
+      "squelette",
+      "vampire",
+      "toile d'araignée"
+    ],
+    "hard": [
+      "des bonbons ou un sort",
+      "maison hantée",
+      "balai volant",
+      "loup-garou"
+    ]
+  }
+}
