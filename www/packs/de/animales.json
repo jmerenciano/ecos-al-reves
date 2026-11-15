@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-animales",
+  "lang": "de",
+  "name": "Tiere",
+  "emoji": "🐘",
+  "description": "Von der Katze bis zum Schnabeltier.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "Katze",
+      "Hund",
+      "Ente",
+      "Kuh",
+      "Bär",
+      "Fisch",
+      "Frosch",
+      "Hahn"
+    ],
+    "medium": [
+      "Elefant",
+      "Giraffe",
+      "Schildkröte",
+      "Pinguin",
+      "Krokodil",
+      "Schmetterling",
+      "Pferd",
+      "Hai"
+    ],
+    "hard": [
+      "Nilpferd",
+      "Nashorn",
+      "Fledermaus",
+      "Schnabeltier",
+      "Pandabär",
+      "Chamäleon",
+      "Seepferdchen",
+      "Dromedar"
+    ]
+  }
+}

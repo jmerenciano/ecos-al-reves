@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-viajes",
+  "lang": "de",
+  "name": "Reisen und Orte",
+  "emoji": "✈️",
+  "description": "Flughäfen, Strände, Züge und Abenteuer.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "Zug",
+      "Flugzeug",
+      "Strand",
+      "Karte",
+      "Boot",
+      "Hotel",
+      "Taxi",
+      "Bus"
+    ],
+    "medium": [
+      "Flughafen",
+      "Koffer",
+      "Reisepass",
+      "Berg",
+      "Fahrkarte",
+      "Bahnhof",
+      "Schloss",
+      "Insel"
+    ],
+    "hard": [
+      "Bordkarte",
+      "Sicherheitskontrolle",
+      "Freizeitpark",
+      "Hubschrauber",
+      "internationaler Flug",
+      "Touristeninformation",
+      "Sonnencreme",
+      "Gepäckband"
+    ]
+  }
+}

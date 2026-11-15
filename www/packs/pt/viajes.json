@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-viajes",
+  "lang": "pt",
+  "name": "Viagens e lugares",
+  "emoji": "✈️",
+  "description": "Aeroportos, praias, comboios e aventuras.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "comboio",
+      "avião",
+      "praia",
+      "mapa",
+      "barco",
+      "hotel",
+      "táxi",
+      "metro"
+    ],
+    "medium": [
+      "aeroporto",
+      "mala",
+      "passaporte",
+      "montanha",
+      "autocarro",
+      "estação",
+      "bilhete",
+      "castelo"
+    ],
+    "hard": [
+      "cartão de embarque",
+      "controlo de segurança",
+      "parque de diversões",
+      "helicóptero",
+      "voo internacional",
+      "posto de turismo",
+      "estação de comboios",
+      "protetor solar"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "appId": "com.ecosalreves.app",
+  "appName": "Ecos al Revés",
+  "webDir": "www",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "never" }
+}

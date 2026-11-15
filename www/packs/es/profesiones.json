@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-profesiones",
+  "lang": "es",
+  "name": "Profesiones",
+  "emoji": "👩‍🚒",
+  "description": "¿Qué quieres ser de mayor?",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "words": {
+    "easy": [
+      "médico",
+      "piloto",
+      "pintor",
+      "juez",
+      "chef",
+      "actor",
+      "cartero",
+      "policía"
+    ],
+    "medium": [
+      "bombero",
+      "enfermera",
+      "profesor",
+      "astronauta",
+      "veterinario",
+      "carpintero",
+      "futbolista",
+      "fontanero"
+    ],
+    "hard": [
+      "arquitecta",
+      "conductor de autobús",
+      "presentador de televisión",
+      "científica loca",
+      "domador de leones",
+      "mecánico de coches",
+      "peluquero",
+      "socorrista de playa"
+    ]
+  }
+}

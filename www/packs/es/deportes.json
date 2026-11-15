@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-deportes",
+  "lang": "es",
+  "name": "Deportes",
+  "emoji": "⚽",
+  "description": "Balones, goles, carreras y todo lo que suena a deporte.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "gol",
+      "balón",
+      "red",
+      "bici",
+      "pista",
+      "copa",
+      "casco",
+      "salto"
+    ],
+    "medium": [
+      "portero",
+      "raqueta",
+      "árbitro",
+      "piscina",
+      "medalla",
+      "bicicleta",
+      "patinaje",
+      "baloncesto"
+    ],
+    "hard": [
+      "campeonato mundial",
+      "tiro de tres puntos",
+      "fuera de juego",
+      "saque de esquina",
+      "carrera de relevos",
+      "maratón olímpico",
+      "penalti decisivo",
+      "entrenador"
+    ]
+  }
+}

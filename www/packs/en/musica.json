@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-musica",
+  "lang": "en",
+  "name": "Music",
+  "emoji": "🎸",
+  "description": "Instruments, songs and concerts.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "words": {
+    "easy": [
+      "piano",
+      "flute",
+      "drum",
+      "rock",
+      "jazz",
+      "violin",
+      "choir",
+      "band"
+    ],
+    "medium": [
+      "guitar",
+      "trumpet",
+      "microphone",
+      "orchestra",
+      "concert",
+      "saxophone",
+      "accordion",
+      "keyboard"
+    ],
+    "hard": [
+      "conductor",
+      "electric guitar",
+      "rock concert",
+      "tambourine",
+      "clarinet",
+      "sheet music",
+      "opera singer",
+      "xylophone"
+    ]
+  }
+}

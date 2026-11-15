@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-deportes",
+  "lang": "ca",
+  "name": "Esports",
+  "emoji": "⚽",
+  "description": "Pilotes, gols, curses i tot el que sona a esport.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "gol",
+      "pilota",
+      "xarxa",
+      "bici",
+      "copa",
+      "casc",
+      "salt",
+      "cursa"
+    ],
+    "medium": [
+      "porter",
+      "raqueta",
+      "àrbitre",
+      "piscina",
+      "medalla",
+      "bicicleta",
+      "patinatge",
+      "bàsquet"
+    ],
+    "hard": [
+      "campionat del món",
+      "tir de tres punts",
+      "fora de joc",
+      "llançament de córner",
+      "cursa de relleus",
+      "marató olímpica",
+      "penal decisiu",
+      "entrenador"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-comida",
+  "lang": "de",
+  "name": "Essen",
+  "emoji": "🍕",
+  "description": "Gerichte, Obst und leckere Sachen.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "Brot",
+      "Suppe",
+      "Käse",
+      "Birne",
+      "Milch",
+      "Ei",
+      "Reis",
+      "Kuchen"
+    ],
+    "medium": [
+      "Banane",
+      "Schokolade",
+      "Keks",
+      "Apfel",
+      "Spaghetti",
+      "Wassermelone",
+      "Karotte",
+      "Pfannkuchen"
+    ],
+    "hard": [
+      "Hamburger",
+      "Orangensaft",
+      "Erdbeereis",
+      "Popcorn",
+      "Käsespätzle",
+      "Bratkartoffeln",
+      "Apfelstrudel",
+      "Brezel mit Butter"
+    ]
+  }
+}

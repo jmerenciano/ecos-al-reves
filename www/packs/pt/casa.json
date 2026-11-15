@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-casa",
+  "lang": "pt",
+  "name": "Casa",
+  "emoji": "🏠",
+  "description": "Móveis, divisões e coisas de casa.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "mesa",
+      "cadeira",
+      "cama",
+      "sofá",
+      "chávena",
+      "chave",
+      "porta",
+      "prato"
+    ],
+    "medium": [
+      "candeeiro",
+      "janela",
+      "cozinha",
+      "armário",
+      "almofada",
+      "frigorífico",
+      "escada",
+      "televisão"
+    ],
+    "hard": [
+      "máquina de lavar loiça",
+      "escova de dentes",
+      "comando da televisão",
+      "mesa de cabeceira",
+      "aspirador",
+      "cortina do chuveiro",
+      "micro-ondas",
+      "máquina de lavar roupa"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-casa",
+  "lang": "fr",
+  "name": "Maison",
+  "emoji": "🏠",
+  "description": "Meubles, pièces et objets de la maison.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "table",
+      "chaise",
+      "lit",
+      "canapé",
+      "tasse",
+      "clé",
+      "porte",
+      "assiette"
+    ],
+    "medium": [
+      "lampe",
+      "fenêtre",
+      "cuisine",
+      "armoire",
+      "oreiller",
+      "frigo",
+      "escalier",
+      "télévision"
+    ],
+    "hard": [
+      "lave-vaisselle",
+      "réfrigérateur",
+      "brosse à dents",
+      "télécommande",
+      "table de chevet",
+      "aspirateur",
+      "rideau de douche",
+      "micro-ondes"
+    ]
+  }
+}

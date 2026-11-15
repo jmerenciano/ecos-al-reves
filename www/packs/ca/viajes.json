@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-viajes",
+  "lang": "ca",
+  "name": "Viatges i llocs",
+  "emoji": "✈️",
+  "description": "Aeroports, platges, trens i aventures.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "tren",
+      "avió",
+      "platja",
+      "mapa",
+      "vaixell",
+      "hotel",
+      "taxi",
+      "metro"
+    ],
+    "medium": [
+      "aeroport",
+      "maleta",
+      "passaport",
+      "muntanya",
+      "autobús",
+      "estació",
+      "bitllet",
+      "castell"
+    ],
+    "hard": [
+      "targeta d'embarcament",
+      "control de seguretat",
+      "parc d'atraccions",
+      "helicòpter",
+      "vol internacional",
+      "oficina de turisme",
+      "estació de tren",
+      "crema solar"
+    ]
+  }
+}

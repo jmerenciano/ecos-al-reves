@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-deportes",
+  "lang": "fr",
+  "name": "Sports",
+  "emoji": "⚽",
+  "description": "Ballons, buts, courses et tout ce qui sent le sport.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "but",
+      "ballon",
+      "filet",
+      "vélo",
+      "piste",
+      "coupe",
+      "casque",
+      "saut"
+    ],
+    "medium": [
+      "gardien",
+      "raquette",
+      "arbitre",
+      "piscine",
+      "médaille",
+      "bicyclette",
+      "patinage",
+      "basket"
+    ],
+    "hard": [
+      "championnat du monde",
+      "tir à trois points",
+      "hors-jeu",
+      "corner",
+      "course de relais",
+      "marathon olympique",
+      "penalty décisif",
+      "entraîneur"
+    ]
+  }
+}

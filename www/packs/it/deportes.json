@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-deportes",
+  "lang": "it",
+  "name": "Sport",
+  "emoji": "⚽",
+  "description": "Palloni, gol, corse e tutto ciò che sa di sport.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "gol",
+      "palla",
+      "rete",
+      "bici",
+      "pista",
+      "coppa",
+      "casco",
+      "salto"
+    ],
+    "medium": [
+      "portiere",
+      "racchetta",
+      "arbitro",
+      "piscina",
+      "medaglia",
+      "bicicletta",
+      "pattinaggio",
+      "pallacanestro"
+    ],
+    "hard": [
+      "campionato del mondo",
+      "tiro da tre punti",
+      "fuorigioco",
+      "calcio d'angolo",
+      "staffetta",
+      "maratona olimpica",
+      "rigore decisivo",
+      "allenatore"
+    ]
+  }
+}

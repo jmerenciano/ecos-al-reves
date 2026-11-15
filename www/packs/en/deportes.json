@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-deportes",
+  "lang": "en",
+  "name": "Sports",
+  "emoji": "⚽",
+  "description": "Balls, goals, races and everything sporty.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "goal",
+      "ball",
+      "net",
+      "bike",
+      "race",
+      "cup",
+      "kick",
+      "swim"
+    ],
+    "medium": [
+      "goalkeeper",
+      "racket",
+      "referee",
+      "medal",
+      "basketball",
+      "skateboard",
+      "tennis",
+      "football"
+    ],
+    "hard": [
+      "world championship",
+      "three point shot",
+      "penalty kick",
+      "relay race",
+      "offside rule",
+      "olympic marathon",
+      "corner kick",
+      "swimming pool"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-comida",
+  "lang": "pt",
+  "name": "Comida",
+  "emoji": "🍕",
+  "description": "Pratos, frutas e coisas boas.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "pão",
+      "sopa",
+      "queijo",
+      "pera",
+      "uva",
+      "leite",
+      "ovo",
+      "arroz"
+    ],
+    "medium": [
+      "omelete",
+      "banana",
+      "chocolate",
+      "bolacha",
+      "maçã",
+      "esparguete",
+      "melancia",
+      "cenoura"
+    ],
+    "hard": [
+      "hambúrguer",
+      "pastel de nata",
+      "sumo de laranja",
+      "gelado de morango",
+      "pipocas",
+      "bacalhau com natas",
+      "francesinha",
+      "arroz de pato"
+    ]
+  }
+}

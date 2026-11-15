@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-comida",
+  "lang": "ca",
+  "name": "Menjar",
+  "emoji": "🍕",
+  "description": "Plats, fruites i coses bones.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "pa",
+      "sopa",
+      "formatge",
+      "pera",
+      "raïm",
+      "llet",
+      "ou",
+      "arròs"
+    ],
+    "medium": [
+      "truita",
+      "plàtan",
+      "xocolata",
+      "galeta",
+      "poma",
+      "espaguetis",
+      "síndria",
+      "pastanaga"
+    ],
+    "hard": [
+      "hamburguesa",
+      "pa amb tomàquet",
+      "macarrons amb formatge",
+      "paella valenciana",
+      "suc de taronja",
+      "crispetes",
+      "gelat de maduixa",
+      "croquetes de pernil"
+    ]
+  }
+}

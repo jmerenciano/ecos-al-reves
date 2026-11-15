@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-comida",
+  "lang": "it",
+  "name": "Cibo",
+  "emoji": "🍕",
+  "description": "Piatti, frutta e cose buone.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "pane",
+      "zuppa",
+      "formaggio",
+      "pera",
+      "uva",
+      "latte",
+      "uovo",
+      "riso"
+    ],
+    "medium": [
+      "frittata",
+      "banana",
+      "cioccolato",
+      "biscotto",
+      "mela",
+      "spaghetti",
+      "anguria",
+      "carota"
+    ],
+    "hard": [
+      "hamburger",
+      "pizza margherita",
+      "succo d'arancia",
+      "gelato alla fragola",
+      "popcorn",
+      "lasagne al forno",
+      "risotto ai funghi",
+      "pane e pomodoro"
+    ]
+  }
+}

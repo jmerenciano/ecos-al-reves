@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-casa",
+  "lang": "ca",
+  "name": "Casa",
+  "emoji": "🏠",
+  "description": "Mobles, habitacions i coses de casa.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "taula",
+      "cadira",
+      "llit",
+      "sofà",
+      "tassa",
+      "clau",
+      "porta",
+      "plat"
+    ],
+    "medium": [
+      "làmpada",
+      "finestra",
+      "cuina",
+      "armari",
+      "coixí",
+      "nevera",
+      "escala",
+      "televisió"
+    ],
+    "hard": [
+      "rentaplats",
+      "frigorífic",
+      "raspall de dents",
+      "comandament a distància",
+      "tauleta de nit",
+      "aspiradora",
+      "cortina de la dutxa",
+      "microones"
+    ]
+  }
+}

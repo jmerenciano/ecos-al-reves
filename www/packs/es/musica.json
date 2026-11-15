@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-musica",
+  "lang": "es",
+  "name": "Música",
+  "emoji": "🎸",
+  "description": "Instrumentos, canciones y conciertos.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "words": {
+    "easy": [
+      "piano",
+      "flauta",
+      "tambor",
+      "rock",
+      "jazz",
+      "violín",
+      "coro",
+      "banda"
+    ],
+    "medium": [
+      "guitarra",
+      "trompeta",
+      "batería",
+      "micrófono",
+      "orquesta",
+      "concierto",
+      "saxofón",
+      "acordeón"
+    ],
+    "hard": [
+      "director de orquesta",
+      "guitarra eléctrica",
+      "concierto de rock",
+      "pandereta",
+      "clarinete",
+      "partitura musical",
+      "cantante de ópera",
+      "xilófono"
+    ]
+  }
+}

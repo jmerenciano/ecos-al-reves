@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-animales",
+  "lang": "fr",
+  "name": "Animaux",
+  "emoji": "🐘",
+  "description": "Du chat à l'ornithorynque.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "chat",
+      "chien",
+      "canard",
+      "vache",
+      "ours",
+      "poisson",
+      "grenouille",
+      "perroquet"
+    ],
+    "medium": [
+      "éléphant",
+      "girafe",
+      "tortue",
+      "pingouin",
+      "crocodile",
+      "papillon",
+      "cheval",
+      "requin"
+    ],
+    "hard": [
+      "hippopotame",
+      "rhinocéros",
+      "chauve-souris",
+      "ornithorynque",
+      "panda géant",
+      "caméléon",
+      "hippocampe",
+      "dromadaire"
+    ]
+  }
+}

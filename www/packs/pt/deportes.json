@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "pt-deportes",
+  "lang": "pt",
+  "name": "Desporto",
+  "emoji": "⚽",
+  "description": "Bolas, golos, corridas e tudo o que soa a desporto.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "golo",
+      "bola",
+      "rede",
+      "pista",
+      "taça",
+      "salto",
+      "corrida",
+      "remo"
+    ],
+    "medium": [
+      "guarda-redes",
+      "raquete",
+      "árbitro",
+      "piscina",
+      "medalha",
+      "bicicleta",
+      "patinagem",
+      "basquetebol"
+    ],
+    "hard": [
+      "campeonato do mundo",
+      "lançamento de três pontos",
+      "fora de jogo",
+      "pontapé de canto",
+      "corrida de estafetas",
+      "maratona olímpica",
+      "penálti decisivo",
+      "treinador"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-casa",
+  "lang": "es",
+  "name": "Casa",
+  "emoji": "🏠",
+  "description": "Muebles, habitaciones y cosas que hay en casa.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "mesa",
+      "silla",
+      "cama",
+      "sofá",
+      "taza",
+      "llave",
+      "puerta",
+      "plato"
+    ],
+    "medium": [
+      "lámpara",
+      "ventana",
+      "cocina",
+      "armario",
+      "almohada",
+      "nevera",
+      "escalera",
+      "televisión"
+    ],
+    "hard": [
+      "lavavajillas",
+      "frigorífico",
+      "cepillo de dientes",
+      "mando a distancia",
+      "mesita de noche",
+      "aspiradora",
+      "cortina de la ducha",
+      "microondas"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-comida",
+  "lang": "en",
+  "name": "Food",
+  "emoji": "🍕",
+  "description": "Meals, fruit and tasty things.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "bread",
+      "soup",
+      "cheese",
+      "pear",
+      "milk",
+      "egg",
+      "rice",
+      "cake"
+    ],
+    "medium": [
+      "banana",
+      "chocolate",
+      "cookie",
+      "apple",
+      "pizza",
+      "sandwich",
+      "carrot",
+      "pancake"
+    ],
+    "hard": [
+      "hamburger",
+      "macaroni and cheese",
+      "orange juice",
+      "strawberry ice cream",
+      "popcorn",
+      "spaghetti bolognese",
+      "peanut butter",
+      "watermelon"
+    ]
+  }
+}

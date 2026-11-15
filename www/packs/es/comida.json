@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-comida",
+  "lang": "es",
+  "name": "Comida",
+  "emoji": "🍕",
+  "description": "Platos, frutas y cosas ricas.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "pan",
+      "sopa",
+      "queso",
+      "pera",
+      "uva",
+      "leche",
+      "huevo",
+      "arroz"
+    ],
+    "medium": [
+      "tortilla",
+      "plátano",
+      "chocolate",
+      "galleta",
+      "manzana",
+      "espaguetis",
+      "sandía",
+      "zanahoria"
+    ],
+    "hard": [
+      "hamburguesa",
+      "pan con tomate",
+      "macarrones con queso",
+      "paella valenciana",
+      "zumo de naranja",
+      "palomitas",
+      "helado de fresa",
+      "croquetas de jamón"
+    ]
+  }
+}

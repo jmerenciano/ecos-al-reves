@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "fr-comida",
+  "lang": "fr",
+  "name": "Nourriture",
+  "emoji": "🍕",
+  "description": "Plats, fruits et bonnes choses.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "pain",
+      "soupe",
+      "fromage",
+      "poire",
+      "raisin",
+      "lait",
+      "œuf",
+      "riz"
+    ],
+    "medium": [
+      "omelette",
+      "banane",
+      "chocolat",
+      "biscuit",
+      "pomme",
+      "spaghetti",
+      "pastèque",
+      "carotte"
+    ],
+    "hard": [
+      "hamburger",
+      "croque-monsieur",
+      "jus d'orange",
+      "glace à la fraise",
+      "pop-corn",
+      "pain au chocolat",
+      "macaronis au fromage",
+      "crêpe au sucre"
+    ]
+  }
+}

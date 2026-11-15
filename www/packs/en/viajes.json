@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-viajes",
+  "lang": "en",
+  "name": "Travel and places",
+  "emoji": "✈️",
+  "description": "Airports, beaches, trains and adventures.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "train",
+      "plane",
+      "beach",
+      "map",
+      "boat",
+      "hotel",
+      "taxi",
+      "bus"
+    ],
+    "medium": [
+      "airport",
+      "suitcase",
+      "passport",
+      "mountain",
+      "ticket",
+      "station",
+      "castle",
+      "island"
+    ],
+    "hard": [
+      "boarding pass",
+      "security check",
+      "theme park",
+      "helicopter",
+      "international flight",
+      "tourist office",
+      "sunscreen",
+      "luggage"
+    ]
+  }
+}

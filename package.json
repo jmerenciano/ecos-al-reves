@@ -1,0 +1,21 @@
+{
+  "name": "ecos-al-reves",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Juego de voz al revés para jugar en familia (web, Android e iOS).",
+  "scripts": {
+    "packs": "node scripts/build-packs.mjs",
+    "serve": "npx --yes http-server www -p 8080 -c-1",
+    "android:init": "npx cap add android && node scripts/native-permissions.mjs",
+    "ios:init": "npx cap add ios && node scripts/native-permissions.mjs",
+    "sync": "npm run packs && npx cap sync",
+    "android:open": "npx cap open android",
+    "ios:open": "npx cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0"
+  }
+}

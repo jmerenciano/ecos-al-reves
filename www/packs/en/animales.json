@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-animales",
+  "lang": "en",
+  "name": "Animals",
+  "emoji": "🐘",
+  "description": "From cats to platypuses.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "cat",
+      "dog",
+      "duck",
+      "cow",
+      "bear",
+      "fish",
+      "frog",
+      "pig"
+    ],
+    "medium": [
+      "elephant",
+      "giraffe",
+      "turtle",
+      "penguin",
+      "crocodile",
+      "butterfly",
+      "monkey",
+      "shark"
+    ],
+    "hard": [
+      "hippopotamus",
+      "rhinoceros",
+      "platypus",
+      "chameleon",
+      "seahorse",
+      "kangaroo",
+      "octopus",
+      "alligator"
+    ]
+  }
+}

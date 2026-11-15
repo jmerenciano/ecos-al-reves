@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-profesiones",
+  "lang": "en",
+  "name": "Jobs",
+  "emoji": "👩‍🚒",
+  "description": "What do you want to be when you grow up?",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": false,
+  "words": {
+    "easy": [
+      "doctor",
+      "pilot",
+      "painter",
+      "judge",
+      "chef",
+      "actor",
+      "nurse",
+      "farmer"
+    ],
+    "medium": [
+      "firefighter",
+      "teacher",
+      "astronaut",
+      "vet",
+      "carpenter",
+      "plumber",
+      "dentist",
+      "scientist"
+    ],
+    "hard": [
+      "architect",
+      "bus driver",
+      "TV presenter",
+      "lion tamer",
+      "car mechanic",
+      "hairdresser",
+      "lifeguard",
+      "police officer"
+    ]
+  }
+}

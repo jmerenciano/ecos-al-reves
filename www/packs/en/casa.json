@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "en-casa",
+  "lang": "en",
+  "name": "Home",
+  "emoji": "🏠",
+  "description": "Furniture, rooms and things around the house.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "bed",
+      "chair",
+      "table",
+      "sofa",
+      "cup",
+      "key",
+      "door",
+      "lamp"
+    ],
+    "medium": [
+      "window",
+      "kitchen",
+      "pillow",
+      "fridge",
+      "stairs",
+      "blanket",
+      "mirror",
+      "curtain"
+    ],
+    "hard": [
+      "dishwasher",
+      "toothbrush",
+      "remote control",
+      "washing machine",
+      "bedside table",
+      "vacuum cleaner",
+      "microwave oven",
+      "refrigerator"
+    ]
+  }
+}

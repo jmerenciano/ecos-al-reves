@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-casa",
+  "lang": "it",
+  "name": "Casa",
+  "emoji": "🏠",
+  "description": "Mobili, stanze e cose di casa.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "tavolo",
+      "sedia",
+      "letto",
+      "divano",
+      "tazza",
+      "chiave",
+      "porta",
+      "piatto"
+    ],
+    "medium": [
+      "lampada",
+      "finestra",
+      "cucina",
+      "armadio",
+      "cuscino",
+      "frigorifero",
+      "scala",
+      "televisione"
+    ],
+    "hard": [
+      "lavastoviglie",
+      "spazzolino da denti",
+      "telecomando",
+      "comodino",
+      "aspirapolvere",
+      "tenda della doccia",
+      "forno a microonde",
+      "lavatrice"
+    ]
+  }
+}

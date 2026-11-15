@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "ca-animales",
+  "lang": "ca",
+  "name": "Animals",
+  "emoji": "🐘",
+  "description": "Del gat a l'ornitorinc.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "gat",
+      "gos",
+      "ànec",
+      "vaca",
+      "ós",
+      "peix",
+      "granota",
+      "lloro"
+    ],
+    "medium": [
+      "elefant",
+      "girafa",
+      "tortuga",
+      "pingüí",
+      "cocodril",
+      "papallona",
+      "cavall",
+      "tauró"
+    ],
+    "hard": [
+      "hipopòtam",
+      "rinoceront",
+      "ratpenat",
+      "ornitorinc",
+      "ós panda",
+      "camaleó",
+      "cavallet de mar",
+      "dromedari"
+    ]
+  }
+}

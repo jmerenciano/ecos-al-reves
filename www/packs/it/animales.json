@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "it-animales",
+  "lang": "it",
+  "name": "Animali",
+  "emoji": "🐘",
+  "description": "Dal gatto all'ornitorinco.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "gatto",
+      "cane",
+      "anatra",
+      "mucca",
+      "orso",
+      "pesce",
+      "rana",
+      "gallo"
+    ],
+    "medium": [
+      "elefante",
+      "giraffa",
+      "tartaruga",
+      "pinguino",
+      "coccodrillo",
+      "farfalla",
+      "cavallo",
+      "squalo"
+    ],
+    "hard": [
+      "ippopotamo",
+      "rinoceronte",
+      "pipistrello",
+      "ornitorinco",
+      "panda gigante",
+      "camaleonte",
+      "cavalluccio marino",
+      "dromedario"
+    ]
+  }
+}

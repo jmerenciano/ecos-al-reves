@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-casa",
+  "lang": "de",
+  "name": "Zuhause",
+  "emoji": "🏠",
+  "description": "Möbel, Zimmer und Dinge im Haus.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "Tisch",
+      "Stuhl",
+      "Bett",
+      "Sofa",
+      "Tasse",
+      "Schlüssel",
+      "Tür",
+      "Teller"
+    ],
+    "medium": [
+      "Lampe",
+      "Fenster",
+      "Küche",
+      "Schrank",
+      "Kissen",
+      "Kühlschrank",
+      "Treppe",
+      "Fernseher"
+    ],
+    "hard": [
+      "Spülmaschine",
+      "Zahnbürste",
+      "Fernbedienung",
+      "Nachttisch",
+      "Staubsauger",
+      "Duschvorhang",
+      "Mikrowelle",
+      "Waschmaschine"
+    ]
+  }
+}

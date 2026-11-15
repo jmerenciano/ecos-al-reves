@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "es-viajes",
+  "lang": "es",
+  "name": "Viajes y lugares",
+  "emoji": "✈️",
+  "description": "Aeropuertos, playas, trenes y aventuras.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "tren",
+      "avión",
+      "playa",
+      "mapa",
+      "barco",
+      "hotel",
+      "taxi",
+      "metro"
+    ],
+    "medium": [
+      "aeropuerto",
+      "maleta",
+      "pasaporte",
+      "montaña",
+      "autobús",
+      "estación",
+      "billete",
+      "castillo"
+    ],
+    "hard": [
+      "tarjeta de embarque",
+      "control de seguridad",
+      "parque de atracciones",
+      "helicóptero",
+      "vuelo internacional",
+      "oficina de turismo",
+      "estación de tren",
+      "crema solar"
+    ]
+  }
+}

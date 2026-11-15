@@ -1,0 +1,43 @@
+{
+  "format": "ecos-al-reves/pack@1",
+  "id": "de-deportes",
+  "lang": "de",
+  "name": "Sport",
+  "emoji": "⚽",
+  "description": "Bälle, Tore, Rennen und alles rund um Sport.",
+  "version": 1,
+  "author": "Ecos al Revés",
+  "builtin": true,
+  "words": {
+    "easy": [
+      "Tor",
+      "Ball",
+      "Netz",
+      "Rad",
+      "Pokal",
+      "Helm",
+      "Sprung",
+      "Lauf"
+    ],
+    "medium": [
+      "Torwart",
+      "Schläger",
+      "Schiedsrichter",
+      "Schwimmbad",
+      "Medaille",
+      "Fahrrad",
+      "Eislaufen",
+      "Basketball"
+    ],
+    "hard": [
+      "Weltmeisterschaft",
+      "Dreipunktewurf",
+      "Abseitsregel",
+      "Eckstoß",
+      "Staffellauf",
+      "olympischer Marathon",
+      "Elfmeterschießen",
+      "Trainer"
+    ]
+  }
+}
