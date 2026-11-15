@@ -36,9 +36,12 @@
       });
       // Consentimiento (RGPD en Europa y otras leyes de privacidad)
       try {
-        const info = await AdMob.requestConsentInfo();
-        if (info.isConsentFormAvailable && info.status === "REQUIRED") await AdMob.showConsentForm();
-        privacyOptions = !!info.isConsentFormAvailable;
+        let info = await AdMob.requestConsentInfo();
+        if (info.isConsentFormAvailable && info.status === "REQUIRED") info = await AdMob.showConsentForm();
+        privacyOptions = info.privacyOptionsRequirementStatus
+          ? info.privacyOptionsRequirementStatus === "REQUIRED"
+          : !!info.isConsentFormAvailable;
+        if (info.canRequestAds === false) return; // sin permiso no pedimos anuncios
       } catch (_) {}
       // iOS: permiso de seguimiento (App Tracking Transparency)
       if (platform === "ios") {
@@ -124,6 +127,6 @@
     rewarded,
     showPrivacyOptions,
     get available() { return ready && !noAds(); },
-    get hasPrivacyOptions() { return ready && privacyOptions; }
+    get hasPrivacyOptions() { return !!AdMob && privacyOptions && !noAds(); }
   };
 })();
