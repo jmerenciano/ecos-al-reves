@@ -249,6 +249,12 @@ textarea.code { font: 12px/1.4 ui-monospace, Menlo, monospace; resize: vertical;
 @property --p { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
 @keyframes ring { to { --p: 100%; } }
 
+.speed-row { display: flex; align-items: center; gap: 14px; }
+.speed-row span { display: grid; text-align: center; min-width: 64px; }
+.speed-row b { font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.speed-row small { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 800; }
+.speed-row .icon-btn { width: 48px; height: 48px; font-size: 1.4rem; }
+.speed-row .icon-btn:disabled { opacity: 0.35; }
 .reveal-title { font-size: 1.7rem; }
 .compare { display: grid; gap: 12px; width: 100%; }
 .cmp {

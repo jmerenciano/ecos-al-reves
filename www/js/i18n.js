@@ -17,7 +17,7 @@
       roundOf: "Ronda {r} de {t}", turnOf: "Turno de {name}", passTo: "Pasa el móvil a", ready: "¡Estoy listo!",
       readAloud: "Lee en voz alta:", tapRecord: "Pulsa para grabar", stop: "Parar", recording: "Grabando…",
       rerecord: "Volver a grabar la palabra", otherWord: "Otra palabra", typeWord: "Escribir otra", typeWordPh: "Escribe una palabra o frase", ok: "Vale",
-      listenTitle: "Escucha el sonido", listen: "Escuchar", listens: "Escuchado {n} veces", listenUnlimited: "Puedes escucharlo todas las veces que quieras.",
+      listenTitle: "Escucha el sonido", listen: "Escuchar", listens: "Escuchas: {n}", listenUnlimited: "Puedes escucharlo todas las veces que quieras.",
       imitateHint: "Imítalo lo mejor que puedas. ¡Solo se graba una vez!", recordAttempt: "Grabar mi imitación",
       secretWord: "Palabra secreta", dontLook: "¡Que {name} no mire!", recorderTurn: "{name} graba la palabra secreta",
       revealTitle: "¡Ahora al derecho!", playAttempt: "Tu imitación al derecho", playOriginal: "Original", playChallenge: "El sonido del reto",
@@ -49,7 +49,8 @@
       fx_puzzle: "Puzle", fx_puzzle_d: "Cortado en 3 trozos, cada uno al revés",
       fx_alien: "Marciano", fx_alien_d: "Al revés, agudo y con voz robótica",
       funnyVoices: "😂 ¡Escúchalo con otra voz!", bestMoments: "😂 Mejores momentos", privacy: "Privacidad", adsOptions: "Opciones de anuncios", watchToUnlock: "🎬 Ver vídeo y descargar", premium: "⭐ Especial", hitLines: "¡Pareces un loro profesional!|¡Hablas al revés como un experto!|¡Clavado! ¿Seguro que no eres de otro planeta?|¡Eso ha sonado increíble!", missLines: "Eso ha sonado a pato resfriado 🦆|¡Casi! Bueno… no tanto 😅|¿Eso era idioma marciano?|¡Ha sonado a robot sin pilas!",
-      removeAds: "Quitar anuncios", removeAdsDesc: "Un solo pago para siempre: sin anuncios y con todos los temarios Especiales desbloqueados.", adsRemoved: "Sin anuncios y con todos los temarios Especiales. ¡Gracias por apoyar el juego!", restore: "Restaurar compras", thanks: "¡Gracias! Ya no verás anuncios 🎉", purchaseError: "No se pudo completar la compra. Inténtalo más tarde.", nothingToRestore: "No hay compras que restaurar en esta cuenta."
+      removeAds: "Quitar anuncios", removeAdsDesc: "Un solo pago para siempre: sin anuncios y con todos los temarios Especiales desbloqueados.", adsRemoved: "Sin anuncios y con todos los temarios Especiales. ¡Gracias por apoyar el juego!", restore: "Restaurar compras", thanks: "¡Gracias! Ya no verás anuncios 🎉", purchaseError: "No se pudo completar la compra. Inténtalo más tarde.", nothingToRestore: "No hay compras que restaurar en esta cuenta.",
+      speed: "Velocidad del sonido", speedHint: "Más lento es más fácil de entender e imitar. Recomendado: 0,8x.", slower: "Más lento", faster: "Más rápido"
     },
     en: {
       langName: "English",
@@ -66,7 +67,7 @@
       roundOf: "Round {r} of {t}", turnOf: "{name}'s turn", passTo: "Pass the phone to", ready: "I'm ready!",
       readAloud: "Read aloud:", tapRecord: "Tap to record", stop: "Stop", recording: "Recording…",
       rerecord: "Record the word again", otherWord: "Another word", typeWord: "Type my own", typeWordPh: "Type a word or phrase", ok: "OK",
-      listenTitle: "Listen to the sound", listen: "Listen", listens: "Played {n} times", listenUnlimited: "You can listen as many times as you like.",
+      listenTitle: "Listen to the sound", listen: "Listen", listens: "Plays: {n}", listenUnlimited: "You can listen as many times as you like.",
       imitateHint: "Copy it as well as you can. You only get one recording!", recordAttempt: "Record my copy",
       secretWord: "Secret word", dontLook: "{name}, no peeking!", recorderTurn: "{name} records the secret word",
       revealTitle: "Now the right way round!", playAttempt: "Your copy, reversed back", playOriginal: "Original", playChallenge: "The challenge sound",
@@ -98,7 +99,8 @@
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cut into 3 pieces, each one backwards",
       fx_alien: "Alien", fx_alien_d: "Backwards, squeaky and robotic",
       funnyVoices: "😂 Hear it with a silly voice!", bestMoments: "😂 Funniest moments", privacy: "Privacy", adsOptions: "Ad options", watchToUnlock: "🎬 Watch a video to unlock", premium: "⭐ Special", hitLines: "You sound like a pro parrot!|Backwards-talking expert!|Spot on! Are you from another planet?|That sounded amazing!", missLines: "That sounded like a duck with a cold 🦆|So close! Well… not really 😅|Was that Martian?|You sound like a robot with flat batteries!",
-      removeAds: "Remove ads", removeAdsDesc: "One payment, forever: no ads and every Special word pack unlocked.", adsRemoved: "No ads and every Special pack unlocked. Thanks for supporting the game!", restore: "Restore purchases", thanks: "Thank you! No more ads 🎉", purchaseError: "The purchase couldn't be completed. Please try again later.", nothingToRestore: "There are no purchases to restore on this account."
+      removeAds: "Remove ads", removeAdsDesc: "One payment, forever: no ads and every Special word pack unlocked.", adsRemoved: "No ads and every Special pack unlocked. Thanks for supporting the game!", restore: "Restore purchases", thanks: "Thank you! No more ads 🎉", purchaseError: "The purchase couldn't be completed. Please try again later.", nothingToRestore: "There are no purchases to restore on this account.",
+      speed: "Sound speed", speedHint: "Slower is easier to understand and copy. Recommended: 0.8x.", slower: "Slower", faster: "Faster"
     },
     ca: {
       langName: "Català / Valencià",
@@ -115,7 +117,7 @@
       roundOf: "Ronda {r} de {t}", turnOf: "Torn de {name}", passTo: "Passa el mòbil a", ready: "Estic llest!",
       readAloud: "Llig en veu alta:", tapRecord: "Prem per a gravar", stop: "Parar", recording: "Gravant…",
       rerecord: "Tornar a gravar la paraula", otherWord: "Una altra paraula", typeWord: "Escriure'n una", typeWordPh: "Escriu una paraula o frase", ok: "D'acord",
-      listenTitle: "Escolta el so", listen: "Escoltar", listens: "Escoltat {n} vegades", listenUnlimited: "Pots escoltar-ho totes les vegades que vulgues.",
+      listenTitle: "Escolta el so", listen: "Escoltar", listens: "Escoltes: {n}", listenUnlimited: "Pots escoltar-ho totes les vegades que vulgues.",
       imitateHint: "Imita-ho tan bé com pugues. Només es grava una vegada!", recordAttempt: "Gravar la meua imitació",
       secretWord: "Paraula secreta", dontLook: "Que {name} no mire!", recorderTurn: "{name} grava la paraula secreta",
       revealTitle: "Ara del dret!", playAttempt: "La teua imitació del dret", playOriginal: "Original", playChallenge: "El so del repte",
@@ -147,7 +149,8 @@
       fx_puzzle: "Trencaclosques", fx_puzzle_d: "Tallat en 3 trossos, cadascun al revés",
       fx_alien: "Marcià", fx_alien_d: "Al revés, agut i amb veu robòtica",
       funnyVoices: "😂 Escolta-ho amb una altra veu!", bestMoments: "😂 Millors moments", privacy: "Privacitat", adsOptions: "Opcions d'anuncis", watchToUnlock: "🎬 Veure vídeo i descarregar", premium: "⭐ Especial", hitLines: "Sembles un lloro professional!|Parles al revés com un expert!|Clavat! Segur que no eres d'un altre planeta?|Això ha sonat increïble!", missLines: "Això ha sonat a ànec refredat 🦆|Quasi! Bé… no tant 😅|Això era idioma marcià?|Ha sonat a robot sense piles!",
-      removeAds: "Llevar anuncis", removeAdsDesc: "Un sol pagament per sempre: sense anuncis i amb tots els temaris Especials desbloquejats.", adsRemoved: "Sense anuncis i amb tots els temaris Especials. Gràcies per donar suport al joc!", restore: "Restaurar compres", thanks: "Gràcies! Ja no veuràs anuncis 🎉", purchaseError: "No s'ha pogut completar la compra. Torna-ho a provar més tard.", nothingToRestore: "No hi ha compres per restaurar en aquest compte."
+      removeAds: "Llevar anuncis", removeAdsDesc: "Un sol pagament per sempre: sense anuncis i amb tots els temaris Especials desbloquejats.", adsRemoved: "Sense anuncis i amb tots els temaris Especials. Gràcies per donar suport al joc!", restore: "Restaurar compres", thanks: "Gràcies! Ja no veuràs anuncis 🎉", purchaseError: "No s'ha pogut completar la compra. Torna-ho a provar més tard.", nothingToRestore: "No hi ha compres per restaurar en aquest compte.",
+      speed: "Velocitat del so", speedHint: "Més lent és més fàcil d'entendre i imitar. Recomanat: 0,8x.", slower: "Més lent", faster: "Més ràpid"
     },
     fr: {
       langName: "Français",
@@ -164,7 +167,7 @@
       roundOf: "Manche {r} sur {t}", turnOf: "Au tour de {name}", passTo: "Passe le téléphone à", ready: "Je suis prêt !",
       readAloud: "Lis à voix haute :", tapRecord: "Appuie pour enregistrer", stop: "Arrêter", recording: "Enregistrement…",
       rerecord: "Réenregistrer le mot", otherWord: "Un autre mot", typeWord: "Écrire le mien", typeWordPh: "Écris un mot ou une phrase", ok: "OK",
-      listenTitle: "Écoute le son", listen: "Écouter", listens: "Écouté {n} fois", listenUnlimited: "Tu peux l'écouter autant de fois que tu veux.",
+      listenTitle: "Écoute le son", listen: "Écouter", listens: "Écoutes : {n}", listenUnlimited: "Tu peux l'écouter autant de fois que tu veux.",
       imitateHint: "Imite-le du mieux possible. Un seul enregistrement !", recordAttempt: "Enregistrer mon imitation",
       secretWord: "Mot secret", dontLook: "{name}, ne regarde pas !", recorderTurn: "{name} enregistre le mot secret",
       revealTitle: "Maintenant à l'endroit !", playAttempt: "Ton imitation à l'endroit", playOriginal: "Original", playChallenge: "Le son du défi",
@@ -196,7 +199,8 @@
       fx_puzzle: "Puzzle", fx_puzzle_d: "Coupé en 3 morceaux, chacun à l'envers",
       fx_alien: "Martien", fx_alien_d: "À l'envers, aigu et robotique",
       funnyVoices: "😂 Écoute-le avec une autre voix !", bestMoments: "😂 Meilleurs moments", privacy: "Confidentialité", adsOptions: "Options publicitaires", watchToUnlock: "🎬 Voir une vidéo et télécharger", premium: "⭐ Spécial", hitLines: "Tu parles comme un perroquet pro !|Expert du parler à l'envers !|Pile poil ! Tu viens d'une autre planète ?|C'était incroyable !", missLines: "On aurait dit un canard enrhumé 🦆|Presque ! Enfin… pas vraiment 😅|C'était du martien ?|On dirait un robot sans piles !",
-      removeAds: "Supprimer les pubs", removeAdsDesc: "Un seul paiement, pour toujours : plus de pubs et tous les thèmes Spéciaux débloqués.", adsRemoved: "Plus de pubs et tous les thèmes Spéciaux débloqués. Merci de soutenir le jeu !", restore: "Restaurer les achats", thanks: "Merci ! Plus de pubs 🎉", purchaseError: "L'achat n'a pas pu aboutir. Réessaie plus tard.", nothingToRestore: "Aucun achat à restaurer sur ce compte."
+      removeAds: "Supprimer les pubs", removeAdsDesc: "Un seul paiement, pour toujours : plus de pubs et tous les thèmes Spéciaux débloqués.", adsRemoved: "Plus de pubs et tous les thèmes Spéciaux débloqués. Merci de soutenir le jeu !", restore: "Restaurer les achats", thanks: "Merci ! Plus de pubs 🎉", purchaseError: "L'achat n'a pas pu aboutir. Réessaie plus tard.", nothingToRestore: "Aucun achat à restaurer sur ce compte.",
+      speed: "Vitesse du son", speedHint: "Plus lent, c'est plus facile à comprendre et à imiter. Conseillé : 0,8x.", slower: "Plus lent", faster: "Plus rapide"
     },
     pt: {
       langName: "Português",
@@ -213,7 +217,7 @@
       roundOf: "Ronda {r} de {t}", turnOf: "Vez de {name}", passTo: "Passa o telemóvel a", ready: "Estou pronto!",
       readAloud: "Lê em voz alta:", tapRecord: "Toca para gravar", stop: "Parar", recording: "A gravar…",
       rerecord: "Gravar a palavra outra vez", otherWord: "Outra palavra", typeWord: "Escrever a minha", typeWordPh: "Escreve uma palavra ou frase", ok: "OK",
-      listenTitle: "Ouve o som", listen: "Ouvir", listens: "Ouvido {n} vezes", listenUnlimited: "Podes ouvir todas as vezes que quiseres.",
+      listenTitle: "Ouve o som", listen: "Ouvir", listens: "Vezes ouvido: {n}", listenUnlimited: "Podes ouvir todas as vezes que quiseres.",
       imitateHint: "Imita o melhor que conseguires. Só se grava uma vez!", recordAttempt: "Gravar a minha imitação",
       secretWord: "Palavra secreta", dontLook: "{name}, não espreites!", recorderTurn: "{name} grava a palavra secreta",
       revealTitle: "Agora ao direito!", playAttempt: "A tua imitação ao direito", playOriginal: "Original", playChallenge: "O som do desafio",
@@ -245,7 +249,8 @@
       fx_puzzle: "Puzzle", fx_puzzle_d: "Cortado em 3 pedaços, cada um ao contrário",
       fx_alien: "Marciano", fx_alien_d: "Ao contrário, agudo e robótico",
       funnyVoices: "😂 Ouve com outra voz!", bestMoments: "😂 Melhores momentos", privacy: "Privacidade", adsOptions: "Opções de anúncios", watchToUnlock: "🎬 Ver vídeo e descarregar", premium: "⭐ Especial", hitLines: "Pareces um papagaio profissional!|Especialista em falar ao contrário!|Em cheio! Tens a certeza que não és de outro planeta?|Isso soou incrível!", missLines: "Isso soou a pato constipado 🦆|Quase! Bem… nem por isso 😅|Isso era marciano?|Pareces um robô sem pilhas!",
-      removeAds: "Remover anúncios", removeAdsDesc: "Um só pagamento para sempre: sem anúncios e com todos os temas Especiais desbloqueados.", adsRemoved: "Sem anúncios e com todos os temas Especiais. Obrigado por apoiares o jogo!", restore: "Restaurar compras", thanks: "Obrigado! Já não vais ver anúncios 🎉", purchaseError: "Não foi possível concluir a compra. Tenta mais tarde.", nothingToRestore: "Não há compras para restaurar nesta conta."
+      removeAds: "Remover anúncios", removeAdsDesc: "Um só pagamento para sempre: sem anúncios e com todos os temas Especiais desbloqueados.", adsRemoved: "Sem anúncios e com todos os temas Especiais. Obrigado por apoiares o jogo!", restore: "Restaurar compras", thanks: "Obrigado! Já não vais ver anúncios 🎉", purchaseError: "Não foi possível concluir a compra. Tenta mais tarde.", nothingToRestore: "Não há compras para restaurar nesta conta.",
+      speed: "Velocidade do som", speedHint: "Mais lento é mais fácil de perceber e imitar. Recomendado: 0,8x.", slower: "Mais lento", faster: "Mais rápido"
     },
     it: {
       langName: "Italiano",
@@ -262,7 +267,7 @@
       roundOf: "Round {r} di {t}", turnOf: "Tocca a {name}", passTo: "Passa il telefono a", ready: "Sono pronto!",
       readAloud: "Leggi ad alta voce:", tapRecord: "Tocca per registrare", stop: "Stop", recording: "Registrazione…",
       rerecord: "Registra di nuovo la parola", otherWord: "Un'altra parola", typeWord: "Scrivi la tua", typeWordPh: "Scrivi una parola o una frase", ok: "OK",
-      listenTitle: "Ascolta il suono", listen: "Ascolta", listens: "Ascoltato {n} volte", listenUnlimited: "Puoi ascoltarlo tutte le volte che vuoi.",
+      listenTitle: "Ascolta il suono", listen: "Ascolta", listens: "Ascolti: {n}", listenUnlimited: "Puoi ascoltarlo tutte le volte che vuoi.",
       imitateHint: "Imitalo meglio che puoi. Si registra una volta sola!", recordAttempt: "Registra la mia imitazione",
       secretWord: "Parola segreta", dontLook: "{name}, non guardare!", recorderTurn: "{name} registra la parola segreta",
       revealTitle: "Ora al dritto!", playAttempt: "La tua imitazione al dritto", playOriginal: "Originale", playChallenge: "Il suono della sfida",
@@ -294,7 +299,8 @@
       fx_puzzle: "Puzzle", fx_puzzle_d: "Tagliato in 3 pezzi, ognuno al contrario",
       fx_alien: "Marziano", fx_alien_d: "Al contrario, acuto e robotico",
       funnyVoices: "😂 Ascoltalo con un'altra voce!", bestMoments: "😂 Momenti migliori", privacy: "Privacy", adsOptions: "Opzioni annunci", watchToUnlock: "🎬 Guarda un video e scarica", premium: "⭐ Speciale", hitLines: "Sembri un pappagallo professionista!|Esperto del parlare al contrario!|Perfetto! Sei sicuro di non venire da un altro pianeta?|È suonato benissimo!", missLines: "Sembrava un'anatra raffreddata 🦆|Quasi! Beh… non proprio 😅|Era marziano?|Sembri un robot scarico!",
-      removeAds: "Rimuovi pubblicità", removeAdsDesc: "Un solo pagamento per sempre: niente pubblicità e tutti i temi Speciali sbloccati.", adsRemoved: "Niente pubblicità e tutti i temi Speciali sbloccati. Grazie per sostenere il gioco!", restore: "Ripristina acquisti", thanks: "Grazie! Niente più pubblicità 🎉", purchaseError: "Impossibile completare l'acquisto. Riprova più tardi.", nothingToRestore: "Non ci sono acquisti da ripristinare su questo account."
+      removeAds: "Rimuovi pubblicità", removeAdsDesc: "Un solo pagamento per sempre: niente pubblicità e tutti i temi Speciali sbloccati.", adsRemoved: "Niente pubblicità e tutti i temi Speciali sbloccati. Grazie per sostenere il gioco!", restore: "Ripristina acquisti", thanks: "Grazie! Niente più pubblicità 🎉", purchaseError: "Impossibile completare l'acquisto. Riprova più tardi.", nothingToRestore: "Non ci sono acquisti da ripristinare su questo account.",
+      speed: "Velocità del suono", speedHint: "Più lento è più facile da capire e imitare. Consigliato: 0,8x.", slower: "Più lento", faster: "Più veloce"
     },
     de: {
       langName: "Deutsch",
@@ -311,7 +317,7 @@
       roundOf: "Runde {r} von {t}", turnOf: "{name} ist dran", passTo: "Gib das Handy an", ready: "Ich bin bereit!",
       readAloud: "Lies laut vor:", tapRecord: "Tippen zum Aufnehmen", stop: "Stopp", recording: "Aufnahme…",
       rerecord: "Wort neu aufnehmen", otherWord: "Anderes Wort", typeWord: "Eigenes eingeben", typeWordPh: "Gib ein Wort oder einen Satz ein", ok: "OK",
-      listenTitle: "Hör dir den Klang an", listen: "Anhören", listens: "{n}-mal angehört", listenUnlimited: "Du kannst es so oft anhören, wie du willst.",
+      listenTitle: "Hör dir den Klang an", listen: "Anhören", listens: "Angehört: {n}×", listenUnlimited: "Du kannst es so oft anhören, wie du willst.",
       imitateHint: "Mach es so gut nach, wie du kannst. Nur eine Aufnahme!", recordAttempt: "Meine Version aufnehmen",
       secretWord: "Geheimes Wort", dontLook: "{name}, nicht hinschauen!", recorderTurn: "{name} nimmt das geheime Wort auf",
       revealTitle: "Jetzt richtig herum!", playAttempt: "Deine Version richtig herum", playOriginal: "Original", playChallenge: "Der Duell-Klang",
@@ -343,7 +349,8 @@
       fx_puzzle: "Puzzle", fx_puzzle_d: "In 3 Stücke geschnitten, jedes rückwärts",
       fx_alien: "Marsmensch", fx_alien_d: "Rückwärts, hoch und robotisch",
       funnyVoices: "😂 Hör es mit lustiger Stimme!", bestMoments: "😂 Lustigste Momente", privacy: "Datenschutz", adsOptions: "Werbeeinstellungen", watchToUnlock: "🎬 Video ansehen und laden", premium: "⭐ Spezial", hitLines: "Du klingst wie ein Profi-Papagei!|Rückwärts-Sprech-Experte!|Volltreffer! Kommst du von einem anderen Planeten?|Das klang großartig!", missLines: "Das klang wie eine erkältete Ente 🦆|Fast! Na ja… nicht ganz 😅|War das Marsianisch?|Wie ein Roboter mit leeren Batterien!",
-      removeAds: "Werbung entfernen", removeAdsDesc: "Einmal zahlen, für immer: keine Werbung und alle Spezial-Wortpakete freigeschaltet.", adsRemoved: "Keine Werbung und alle Spezial-Pakete freigeschaltet. Danke für deine Unterstützung!", restore: "Käufe wiederherstellen", thanks: "Danke! Keine Werbung mehr 🎉", purchaseError: "Der Kauf konnte nicht abgeschlossen werden. Versuch es später nochmal.", nothingToRestore: "Für dieses Konto gibt es keine Käufe zum Wiederherstellen."
+      removeAds: "Werbung entfernen", removeAdsDesc: "Einmal zahlen, für immer: keine Werbung und alle Spezial-Wortpakete freigeschaltet.", adsRemoved: "Keine Werbung und alle Spezial-Pakete freigeschaltet. Danke für deine Unterstützung!", restore: "Käufe wiederherstellen", thanks: "Danke! Keine Werbung mehr 🎉", purchaseError: "Der Kauf konnte nicht abgeschlossen werden. Versuch es später nochmal.", nothingToRestore: "Für dieses Konto gibt es keine Käufe zum Wiederherstellen.",
+      speed: "Geschwindigkeit", speedHint: "Langsamer ist leichter zu verstehen und nachzumachen. Empfohlen: 0,8x.", slower: "Langsamer", faster: "Schneller"
     }
   };
 

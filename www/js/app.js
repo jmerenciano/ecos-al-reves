@@ -19,6 +19,7 @@
     mode: "solo",
     effects: ["reverse"],
     difficulty: "mixed",
+    speed: 0.8,
     selectedPacks: null,
     showAllLangs: false
   });
@@ -149,6 +150,12 @@
         ${[1, 3, 5, 10].map(r => `<button class="${S.rounds === r ? "on" : ""}" data-rounds="${r}">${r}</button>`).join("")}
       </div>
 
+      <h2>${t("speed")}</h2>
+      <p class="hint left">${t("speedHint")}</p>
+      <div class="seg" role="group">
+        ${SPEEDS.map(v => `<button class="${S.speed === v ? "on" : ""}" data-speed="${v}">${v === SPEEDS[0] ? "🐢 " : v === SPEEDS[SPEEDS.length - 1] ? "🐇 " : ""}${fmtSpeed(v)}</button>`).join("")}
+      </div>
+
       <h2>${t("difficulty")}</h2>
       <div class="seg" role="group">
         ${["easy", "medium", "hard", "mixed"].map(d => `<button class="${S.difficulty === d ? "on" : ""}" data-diff="${d}">${t(d)}</button>`).join("")}
@@ -216,6 +223,7 @@
     if (add) add.onclick = () => { S.players.push(t("playerN", { n: S.players.length + 1 })); saveS(); renderSetup(); };
     app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { S.mode = b.dataset.mode; saveS(); renderSetup(); });
     app.querySelectorAll("[data-rounds]").forEach(b => b.onclick = () => { S.rounds = +b.dataset.rounds; saveS(); renderSetup(); });
+    app.querySelectorAll("[data-speed]").forEach(b => b.onclick = () => { S.speed = +b.dataset.speed; saveS(); renderSetup(); });
     app.querySelectorAll("[data-diff]").forEach(b => b.onclick = () => { S.difficulty = b.dataset.diff; saveS(); renderSetup(); });
     app.querySelectorAll("[data-fx]").forEach(b => b.onclick = () => {
       const id = b.dataset.fx;
@@ -467,7 +475,7 @@
       word: nextWord(),
       effect: A.EFFECTS.find(f => f.id === fxId) || A.EFFECTS[0],
       original: null, challenge: null, attempt: null, result: null,
-      listens: 0, step: "word", wordShown: S.mode === "solo"
+      listens: 0, step: "word", wordShown: S.mode === "solo", speed: S.speed
     };
     if (n > 1) renderPass(recorder, () => renderTurn());
     else renderTurn();
@@ -569,6 +577,11 @@
           ${fxBadge()}
           <canvas class="wave" id="wave-ch"></canvas>
           <button class="btn play big" id="play-ch">▶ ${t("listen")}</button>
+          <div class="speed-row">
+            <button class="icon-btn" id="slower" aria-label="${t("slower")}">🐢</button>
+            <span><small>${t("speed")}</small><b id="speed-val">${fmtSpeed(turn.speed)}</b></span>
+            <button class="icon-btn" id="faster" aria-label="${t("faster")}">🐇</button>
+          </div>
           <p class="hint" id="listens">${turn.listens ? t("listens", { n: turn.listens }) : t("listenUnlimited")}</p>
         </div>
         <p class="hint strong">🎯 ${t("imitateHint")}</p>
@@ -638,17 +651,30 @@
       $("#play-ch").onclick = async () => {
         turn.listens++;
         $("#listens").textContent = t("listens", { n: turn.listens });
-        await A.play(turn.challenge, { rate: turn.effect.rate, fx: turn.effect.fx });
+        await A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
       };
+      const setSpeed = dir => {
+        const i = SPEEDS.indexOf(turn.speed);
+        const next = SPEEDS[Math.min(SPEEDS.length - 1, Math.max(0, (i < 0 ? 2 : i) + dir))];
+        turn.speed = next;
+        $("#speed-val").textContent = fmtSpeed(next);
+        $("#slower").disabled = next === SPEEDS[0];
+        $("#faster").disabled = next === SPEEDS[SPEEDS.length - 1];
+        A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+      };
+      $("#slower").disabled = turn.speed === SPEEDS[0];
+      $("#faster").disabled = turn.speed === SPEEDS[SPEEDS.length - 1];
+      $("#slower").onclick = () => setSpeed(-1);
+      $("#faster").onclick = () => setSpeed(1);
       mountRecorder($("#rec"), buf => {
         turn.attempt = buf;
         turn.result = A.transform(buf, turn.effect.mode);
         turn.step = "reveal";
         // guardamos las últimas imitaciones para los "mejores momentos"
-        game.history.push({ p: turn.imitator, word: turn.word, buf: turn.result, rate: 1 / turn.effect.rate });
+        game.history.push({ p: turn.imitator, word: turn.word, buf: turn.result, rate: resRate() });
         if (game.history.length > 12) game.history.shift();
         renderTurn();
-        A.play(turn.result, { rate: 1 / turn.effect.rate });
+        A.play(turn.result, { rate: resRate() });
       });
       const redo = $("#redo");
       if (redo) redo.onclick = () => { turn.step = "word"; renderTurn(); };
@@ -657,10 +683,10 @@
     if (turn.step === "reveal") {
       A.drawWave($("#wave-res"), turn.result, imit.color);
       A.drawWave($("#wave-orig"), turn.original, recd.color);
-      $("#play-res").onclick = () => A.play(turn.result, { rate: 1 / turn.effect.rate });
+      $("#play-res").onclick = () => A.play(turn.result, { rate: resRate() });
       $("#play-orig").onclick = () => A.play(turn.original);
-      $("#play-ch").onclick = () => A.play(turn.challenge, { rate: turn.effect.rate, fx: turn.effect.fx });
-      bindFunny(app, turn.result, 1 / turn.effect.rate);
+      $("#play-ch").onclick = () => A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+      bindFunny(app, turn.result, resRate());
       const sw = $("#show-word");
       if (sw) sw.onclick = () => { turn.wordShown = true; renderTurn(); };
       const vh = $("#v-hit"), vm = $("#v-miss");
@@ -690,6 +716,13 @@
   }
   const pick = key => { const l = t(key).split("|"); return l[Math.floor(Math.random() * l.length)]; };
 
+  /* Velocidad del sonido al revés. El reto suena a effect.rate × speed y la
+     imitación, al darle la vuelta, a la inversa: así vuelve a su velocidad real. */
+  const SPEEDS = [0.6, 0.7, 0.8, 1, 1.2];
+  const fmtSpeed = v => v.toLocaleString(I18N.lang, { maximumFractionDigits: 1 }) + "x";
+  const chRate = () => turn.effect.rate * turn.speed;
+  const resRate = () => 1 / chRate();
+
   function getCss(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#7B4DFF"; }
 
   function verdict(good) {
@@ -709,7 +742,7 @@
         <button class="btn primary big" id="next">${last ? t("seeResults") : t("next")}</button>
       </main>`;
     bindQuit();
-    bindFunny(app, turn.result, 1 / turn.effect.rate);
+    bindFunny(app, turn.result, resRate());
     $("#next").onclick = async () => {
       A.stopAll();
       await Ads.afterTurn(last);
