@@ -3,3 +3,8 @@ android/
 ios/
 .DS_Store
 *.log
+
+# Llaves de firma: NUNCA subirlas al repositorio
+*.jks
+*.keystore
+llave-*.txt

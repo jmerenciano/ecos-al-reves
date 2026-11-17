@@ -1,5 +1,5 @@
 {
-  "appId": "com.ecosalreves.app",
+  "appId": "com.jmerenciano.ecosalreves",
   "appName": "Ecos al Revés",
   "webDir": "www",
   "android": { "allowMixedContent": false },

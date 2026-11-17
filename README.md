@@ -100,6 +100,11 @@ El workflow `.github/workflows/pages.yml` publica la carpeta `www/` en cada push
 
 ## App Android
 
+📘 **Guía completa para publicar en Google Play:** [`docs/google-play-paso-a-paso.md`](docs/google-play-paso-a-paso.md)
+
+- **Versión final firmada para Google Play (.aab):** pestaña **Actions → Versión Google Play → Run workflow** (necesita los secretos de la llave de firma; ver la guía).
+
+
 - **APK de prueba sin instalar nada**: pestaña **Actions → APK Android → Run workflow**, y descarga el APK cuando termine.
 - **En tu ordenador** (necesita Android Studio):
   ```bash

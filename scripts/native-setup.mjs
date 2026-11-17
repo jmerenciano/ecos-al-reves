@@ -28,6 +28,19 @@ if (existsSync(manifest)) {
   console.log(`Android: micrófono + AdMob (${ads.useTestAds ? "PRUEBA" : "REAL"}) configurados.`);
 }
 
+/* Versión: versionName sale de package.json y versionCode de la variable
+   VERSION_CODE (en GitHub Actions, el número de ejecución), que debe crecer
+   en cada subida a Google Play. */
+const gradle = "android/app/build.gradle";
+if (existsSync(gradle)) {
+  const pkg = JSON.parse(readFileSync("package.json", "utf8"));
+  const code = parseInt(process.env.VERSION_CODE || "1", 10);
+  let g = readFileSync(gradle, "utf8");
+  g = g.replace(/versionCode \d+/, `versionCode ${code}`).replace(/versionName "[^"]*"/, `versionName "${pkg.version}"`);
+  writeFileSync(gradle, g);
+  console.log(`Android: versión ${pkg.version} (código ${code}).`);
+}
+
 /* ---------- iOS ---------- */
 const plist = "ios/App/App/Info.plist";
 if (existsSync(plist)) {

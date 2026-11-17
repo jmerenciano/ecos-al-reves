@@ -6,15 +6,17 @@
   "scripts": {
     "packs": "node scripts/build-packs.mjs",
     "serve": "npx --yes http-server www -p 8080 -c-1",
-    "android:init": "npx cap add android && node scripts/native-setup.mjs",
-    "ios:init": "npx cap add ios && node scripts/native-setup.mjs",
+    "android:init": "npx cap add android && npm run icons && node scripts/native-setup.mjs",
+    "ios:init": "npx cap add ios && npm run icons && node scripts/native-setup.mjs",
     "sync": "npm run packs && npx cap sync && node scripts/native-setup.mjs",
     "android:open": "npx cap open android",
     "ios:open": "npx cap open ios",
-    "native": "node scripts/native-setup.mjs"
+    "native": "node scripts/native-setup.mjs",
+    "icons": "capacitor-assets generate --android --ios"
   },
   "devDependencies": {
     "@capacitor/android": "~8.5.3",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "~8.5.3",
     "@capacitor/ios": "~8.5.3"
   },
