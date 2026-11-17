@@ -20,6 +20,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { margin: 0; min-height: 100%; }
 body {
   background-color: var(--bg);
@@ -132,6 +133,7 @@ button { cursor: pointer; }
   display: flex; flex-direction: column; gap: 4px;
 }
 .choice b { font-family: var(--display); font-size: 1.15rem; }
+.choice.wide { grid-column: 1 / -1; }
 .choice.on { background: var(--grape); color: #fff; }
 .choice.on small { color: #E8E0FF; }
 .choice:disabled { opacity: 0.55; }
@@ -293,6 +295,22 @@ textarea.code { font: 12px/1.4 ui-monospace, Menlo, monospace; resize: vertical;
 .ranking b { font-variant-numeric: tabular-nums; color: var(--pc); }
 .place { width: 32px; font-size: 1.4rem; text-align: center; }
 
+.attempts { display: grid; gap: 10px; width: 100%; }
+.attempt {
+  background: var(--card); border-radius: var(--r); padding: 12px; box-shadow: var(--shadow); display: grid; gap: 8px;
+  border-left: 6px solid var(--pc); text-align: left; transition: transform 0.15s, box-shadow 0.15s;
+}
+.attempt.playing { transform: scale(1.02); box-shadow: 0 0 0 3px var(--sun), var(--shadow); }
+.attempt .avatar { width: 34px; height: 34px; font-size: 1.15rem; }
+.small-wave { height: 40px; }
+.word-box { display: grid; gap: 10px; width: 100%; justify-items: center; }
+.vote-chip {
+  border: 0; border-radius: 999px; padding: 10px 14px; font-weight: 800; background: var(--line);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--pc) 40%, white);
+}
+.vote-chip.on { background: var(--pc); color: #fff; box-shadow: 0 3px 0 rgba(43, 33, 71, 0.2); }
+.vote-chip:disabled { opacity: 0.35; }
+.round-winner { font-size: clamp(2rem, 9vw, 3rem) !important; color: var(--grape); }
 .funny { background: #FFF8E1; border-radius: var(--r); padding: 14px; width: 100%; display: grid; gap: 10px; }
 .funny p { margin: 0; font-weight: 800; }
 .pill-btn.voice { background: var(--card); box-shadow: 0 3px 0 rgba(43, 33, 71, 0.12); }
