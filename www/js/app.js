@@ -150,9 +150,14 @@
       </div>
 
       <h2>${t("rounds")}</h2>
+      ${S.mode === "party" ? `
+      <p class="hint left">${t("lapsHint")}</p>
+      <div class="seg" role="group">
+        ${[1, 2, 3].map(l => `<button class="${(S.laps || 1) === l ? "on" : ""}" data-laps="${l}">${t(l === 1 ? "lap1" : "lapsN", { n: l })}<br><small>${t("nRounds", { n: l * n })}</small></button>`).join("")}
+      </div>` : `
       <div class="seg" role="group">
         ${[1, 3, 5, 10].map(r => `<button class="${S.rounds === r ? "on" : ""}" data-rounds="${r}">${r}</button>`).join("")}
-      </div>
+      </div>`}
 
       <h2>${t("speed")}</h2>
       <p class="hint left">${t("speedHint")}</p>
@@ -226,6 +231,7 @@
     const add = $("#add");
     if (add) add.onclick = () => { S.players.push(t("playerN", { n: S.players.length + 1 })); saveS(); renderSetup(); };
     app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { S.mode = b.dataset.mode; saveS(); renderSetup(); });
+    app.querySelectorAll("[data-laps]").forEach(b => b.onclick = () => { S.laps = +b.dataset.laps; saveS(); renderSetup(); });
     app.querySelectorAll("[data-rounds]").forEach(b => b.onclick = () => { S.rounds = +b.dataset.rounds; saveS(); renderSetup(); });
     app.querySelectorAll("[data-speed]").forEach(b => b.onclick = () => { S.speed = +b.dataset.speed; saveS(); renderSetup(); });
     app.querySelectorAll("[data-diff]").forEach(b => b.onclick = () => { S.difficulty = b.dataset.diff; saveS(); renderSetup(); });
@@ -459,7 +465,8 @@
     keepAwake();
     game = {
       players: S.players.map((name, i) => ({ name: name.trim() || t("playerN", { n: i + 1 }), score: 0, avatar: AVATARS[i], color: COLORS[i] })),
-      round: 1, idx: 0, deck: words, deckPos: 0, ids, history: []
+      round: 1, idx: 0, deck: words, deckPos: 0, ids, history: [],
+      rounds: S.mode === "party" ? S.players.length * (S.laps || 1) : S.rounds
     };
     if (S.mode === "party") startPartyRound(); else startTurn();
   }
@@ -489,7 +496,7 @@
     const p = game.players;
     return `<header class="game-top">
       <div class="row between">
-        <span class="round-chip">${t("roundOf", { r: game.round, t: S.rounds })}</span>
+        <span class="round-chip">${t("roundOf", { r: game.round, t: game.rounds })}</span>
         <button class="btn ghost small" id="quit">${t("quit")}</button>
       </div>
       ${p.length > 1 ? `<div class="score-strip" aria-label="${t("scoreboard")}">
@@ -735,7 +742,7 @@
     if (good) p.score++;
     A.jingle(good);
     if (good) confetti();
-    const last = game.idx === game.players.length - 1 && game.round === S.rounds;
+    const last = game.idx === game.players.length - 1 && game.round === game.rounds;
     app.innerHTML = header() + `
       <main class="verdict ${good ? "good" : "bad"}">
         <div class="verdict-emoji">${good ? "🎉" : "🙈"}</div>
@@ -752,7 +759,7 @@
       await Ads.afterTurn(last);
       game.idx++;
       if (game.idx >= game.players.length) { game.idx = 0; game.round++; }
-      if (game.round > S.rounds) renderFinal(); else startTurn();
+      if (game.round > game.rounds) renderFinal(); else startTurn();
     };
   }
 
@@ -773,8 +780,8 @@
       effect: A.EFFECTS.find(f => f.id === fxId) || A.EFFECTS[0],
       original: null, challenge: null, result: null, listens: 0, speed: S.speed
     };
-    party = { reader, order, k: 0, attempts: [], wordShown: false, first: null, second: null };
-    renderPass(reader, partyWord, t("nobodyLook"));
+    party = { reader, order, k: 0, attempts: [], first: null, second: null };
+    renderPass(reader, partyWord);
   }
 
   function partyWord() {
@@ -782,9 +789,8 @@
     const r = game.players[party.reader];
     app.innerHTML = header() + `<main class="turn">
       <p class="who" style="--pc:${r.color}">${r.avatar} ${esc(t("readerTurn", { name: r.name }))}</p>
-      <p class="warn">🙈 ${t("nobodyLook")}</p>
       <div class="word-card">
-        <small>${t("secretWord")}</small>
+        <small>${t("readAloud")}</small>
         <div class="word" id="word">${esc(turn.word)}</div>
         <div class="row center tight"><button class="pill-btn" id="other">🔀 ${t("otherWord")}</button></div>
       </div>
@@ -813,6 +819,7 @@
     const pl = game.players[turn.imitator];
     app.innerHTML = header() + `<main class="turn">
       <p class="who" style="--pc:${pl.color}">${pl.avatar} ${esc(t("turnOf", { name: pl.name }))}</p>
+      <div class="word-card mini"><small>${t("theWord")}</small><div class="word">${esc(turn.word)}</div></div>
       <div class="listen-card">
         <h2>${t("listenTitle")}</h2>
         ${fxBadge()}
@@ -871,6 +878,7 @@
     const voices = FUNNY.slice(0, 4);
     app.innerHTML = header() + `<main class="turn">
       <h2 class="reveal-title">🔄 ${t("bigReveal")}</h2>
+      <div class="word-card mini"><small>${t("theWord")}</small><div class="word">${esc(turn.word)}</div></div>
       <p class="hint strong">${t("revealHint")}</p>
       <button class="btn play big" id="play-all">${t("playAll")}</button>
       <div class="attempts">
@@ -913,14 +921,7 @@
   }
 
   function renderWordBox() {
-    const box = $("#word-box");
-    if (!party.wordShown) {
-      box.innerHTML = `<button class="btn big" id="show-word">👀 ${t("showWord")}</button>`;
-      $("#show-word").onclick = () => { party.wordShown = true; renderWordBox(); renderVote(); };
-      return;
-    }
-    box.innerHTML = `<div class="word-card mini"><small>${t("theWordWas")}</small><div class="word">${esc(turn.word)}</div></div>
-      <div class="row center wrap tight">
+    $("#word-box").innerHTML = `<div class="row center wrap tight">
         <button class="btn play ghost" id="play-orig">▶ ${t("playOriginal")}</button>
         <button class="link-btn" id="play-ch">${turn.effect.emoji} ${t("playChallenge")}</button>
       </div>`;
@@ -930,8 +931,6 @@
 
   function renderVote() {
     const box = $("#vote");
-    if (!party.wordShown) { box.hidden = true; return; }
-    box.hidden = false;
     const P = game.players;
     const ids = party.attempts.map(a => a.p);
     const chip = (i, kind) => {
@@ -970,7 +969,7 @@
     if (s2) s2.score += 1;
     A.jingle(true);
     confetti();
-    const last = game.round >= S.rounds;
+    const last = game.round >= game.rounds;
     const best = party.attempts.find(a => a.p === party.first);
     app.innerHTML = header() + `
       <main class="verdict good">
@@ -988,7 +987,7 @@
       A.stopAll();
       await Ads.afterTurn(last);
       game.round++;
-      if (game.round > S.rounds) renderFinal(); else startPartyRound();
+      if (game.round > game.rounds) renderFinal(); else startPartyRound();
     };
   }
 
@@ -998,7 +997,7 @@
     const top = ranked[0].score;
     const winners = ranked.filter(p => p.score === top);
     const title = game.players.length === 1
-      ? t("hits", { n: top, t: S.rounds })
+      ? t("hits", { n: top, t: game.rounds })
       : winners.length > 1 ? t("tie") : t("winner", { name: winners[0].name });
     let place = 0, prev = null;
     app.innerHTML = `

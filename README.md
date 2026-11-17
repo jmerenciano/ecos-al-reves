@@ -18,7 +18,7 @@ Un juego de risas garantizadas para jugar en familia, con amigos o en fiestas. S
 ## ✨ Por qué te va a gustar
 
 - 👨‍👩‍👧‍👦 **De 1 a 10 jugadores** con un solo móvil
-- 🎤 **Tres modos:** *Solo* (imita tu propia voz), *Reto* (adivina la palabra secreta de otro) y 🏆 *Competición* (todos imitan la misma palabra y votáis quién se acerca más)
+- 🎤 **Tres modos:** *Solo* (imita tu propia voz), *Reto* (adivina la palabra secreta de otro) y 🏆 *Competición* (todos imitan el mismo sonido y votáis quién se acerca más; una ronda por jugador)
 - 🐿️ **8 efectos locos:** Ardilla, Gigante, Robot, Cueva, Teléfono, Puzle, Marciano y Clásico
 - 😂 **Vuelve a escuchar cada imitación con voces graciosas** y repasa los **mejores momentos** al final de la partida
 - 🌍 **7 idiomas:** español, inglés, catalán/valenciano, francés, portugués, italiano y alemán
