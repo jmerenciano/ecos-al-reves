@@ -31,6 +31,7 @@ Abre el archivo `llave-secretos-github.txt` que te he pasado. Luego:
 ## Paso 4 · Crear la app en Play Console
 
 **Crear app**:
+
 - Nombre: `Ecos al Revés: habla al revés`
 - Idioma predeterminado: **Español (España)**
 - App o juego: **Juego** · Gratis o de pago: **Gratis**
@@ -100,6 +101,7 @@ Para cada uno: tratamiento **efímero: No** · **obligatorio** (los usuarios no 
 Con la app ya subida, puedes crear el producto de compra:
 
 **Monetizar → Productos → Productos integrados en la aplicación → Crear producto**:
+
 - ID del producto: `remove_ads` (exactamente así)
 - Nombre: `Quitar anuncios` · Descripción: `Sin anuncios para siempre y todos los temarios Especiales`
 - Precio: por ejemplo **2,99 €** (Google calcula el resto de países) → **Activar**.
