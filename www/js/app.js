@@ -650,6 +650,7 @@
       mountRecorder($("#rec"), buf => {
         turn.original = buf;
         turn.challenge = A.transform(buf, turn.effect.mode);
+        turn._ch = {};
         turn.step = "listen";
         turn.listens = 0;
         if (S.mode === "challenge") renderPass(turn.imitator, renderTurn);
@@ -662,7 +663,7 @@
       $("#play-ch").onclick = async () => {
         turn.listens++;
         $("#listens").textContent = t("listens", { n: turn.listens });
-        await A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+        await A.play(chBuf(), { rate: chRate(), fx: turn.effect.fx });
       };
       const setSpeed = dir => {
         const i = SPEEDS.indexOf(turn.speed);
@@ -671,7 +672,7 @@
         $("#speed-val").textContent = fmtSpeed(next);
         $("#slower").disabled = next === SPEEDS[0];
         $("#faster").disabled = next === SPEEDS[SPEEDS.length - 1];
-        A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+        A.play(chBuf(), { rate: chRate(), fx: turn.effect.fx });
       };
       $("#slower").disabled = turn.speed === SPEEDS[0];
       $("#faster").disabled = turn.speed === SPEEDS[SPEEDS.length - 1];
@@ -679,7 +680,7 @@
       $("#faster").onclick = () => setSpeed(1);
       mountRecorder($("#rec"), buf => {
         turn.attempt = buf;
-        turn.result = A.transform(buf, turn.effect.mode);
+        turn.result = toResult(buf);
         turn.step = "reveal";
         // guardamos las últimas imitaciones para los "mejores momentos"
         game.history.push({ p: turn.imitator, word: turn.word, buf: turn.result, rate: resRate() });
@@ -696,7 +697,7 @@
       A.drawWave($("#wave-orig"), turn.original, recd.color);
       $("#play-res").onclick = () => A.play(turn.result, { rate: resRate() });
       $("#play-orig").onclick = () => A.play(turn.original);
-      $("#play-ch").onclick = () => A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+      $("#play-ch").onclick = () => A.play(chBuf(), { rate: chRate(), fx: turn.effect.fx });
       bindFunny(app, turn.result, resRate());
       const sw = $("#show-word");
       if (sw) sw.onclick = () => { turn.wordShown = true; renderTurn(); };
@@ -731,8 +732,16 @@
      imitación, al darle la vuelta, a la inversa: así vuelve a su velocidad real. */
   const SPEEDS = [0.6, 0.7, 0.8, 1, 1.2];
   const fmtSpeed = v => v.toLocaleString(I18N.lang, { maximumFractionDigits: 1 }) + "x";
-  const chRate = () => turn.effect.rate * turn.speed;
-  const resRate = () => 1 / chRate();
+  // La velocidad se cambia sin tocar el tono (A.stretch); el tono solo lo
+  // cambian a propósito los efectos (Ardilla, Gigante, Marciano).
+  const chRate = () => turn.effect.rate;
+  const resRate = () => 1 / turn.effect.rate;
+  const chBuf = (sp = turn.speed) => {
+    turn._ch = turn._ch || {};
+    return turn._ch[sp] || (turn._ch[sp] = A.stretch(turn.challenge, 1 / sp));
+  };
+  // imitación al derecho y devuelta a su ritmo real (sin cambiar el tono)
+  const toResult = buf => A.stretch(A.transform(buf, turn.effect.mode), turn.speed);
 
   function getCss(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#7B4DFF"; }
 
@@ -801,6 +810,7 @@
     mountRecorder($("#rec"), buf => {
       turn.original = buf;
       turn.challenge = A.transform(buf, turn.effect.mode);
+        turn._ch = {};
       partyNextImitator();
     });
   }
@@ -840,11 +850,11 @@
     $("#play-ch").onclick = () => {
       turn.listens++;
       $("#listens").textContent = t("listens", { n: turn.listens });
-      A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+      A.play(chBuf(), { rate: chRate(), fx: turn.effect.fx });
     };
     bindSpeed();
     mountRecorder($("#rec"), buf => {
-      const result = A.transform(buf, turn.effect.mode);
+      const result = toResult(buf);
       party.attempts.push({ p: turn.imitator, buf: result, rate: resRate() });
       game.history.push({ p: turn.imitator, word: turn.word, buf: result, rate: resRate() });
       if (game.history.length > 12) game.history.shift();
@@ -864,7 +874,7 @@
       const i = SPEEDS.indexOf(turn.speed);
       turn.speed = SPEEDS[Math.min(SPEEDS.length - 1, Math.max(0, (i < 0 ? 2 : i) + dir))];
       upd();
-      A.play(turn.challenge, { rate: chRate(), fx: turn.effect.fx });
+      A.play(chBuf(), { rate: chRate(), fx: turn.effect.fx });
     };
     $("#slower").onclick = () => move(-1);
     $("#faster").onclick = () => move(1);
@@ -926,7 +936,7 @@
         <button class="link-btn" id="play-ch">${turn.effect.emoji} ${t("playChallenge")}</button>
       </div>`;
     $("#play-orig").onclick = () => { playAllToken++; A.play(turn.original); };
-    $("#play-ch").onclick = () => { playAllToken++; A.play(turn.challenge, { rate: turn.effect.rate * S.speed, fx: turn.effect.fx }); };
+    $("#play-ch").onclick = () => { playAllToken++; A.play(chBuf(S.speed), { rate: chRate(), fx: turn.effect.fx }); };
   }
 
   function renderVote() {

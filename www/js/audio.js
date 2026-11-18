@@ -24,7 +24,8 @@
       throw err;
     }
     stream = await navigator.mediaDevices.getUserMedia({
-      audio: { echoCancellation: true, noiseSuppression: false, autoGainControl: true }
+      // sin filtros de llamada: queremos la voz tal cual, sin "procesar"
+      audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false }
     });
   }
 
@@ -108,6 +109,50 @@
       for (let i = 0; i < L; i++) d[i] = s[L - 1 - i];
     }
     return out;
+  }
+
+  /* Cambia la duración SIN cambiar el tono (WSOLA).
+     factor > 1 alarga (más lento), factor < 1 acorta (más rápido).
+     Trocea el audio en ventanas de 40 ms solapadas al 50 % y, en cada
+     unión, busca el desplazamiento que mejor encaja con lo anterior. */
+  function stretch(buf, factor) {
+    if (!buf || Math.abs(factor - 1) < 0.01) return buf;
+    const sr = buf.sampleRate, x = buf.getChannelData(0), L = x.length;
+    const N = Math.round(sr * 0.04) & ~1;     // ventana
+    const Hs = N >> 1;                        // salto de salida
+    const Ha = Hs / factor;                   // salto de entrada
+    const tol = Math.round(sr * 0.012);       // margen de búsqueda
+    const outLen = Math.round(L * factor);
+    const y = new Float32Array(outLen + N), wsum = new Float32Array(outLen + N);
+    const w = new Float32Array(N);
+    for (let i = 0; i < N; i++) w[i] = 0.5 - 0.5 * Math.cos((2 * Math.PI * i) / N);
+    let prev = 0;
+    for (let k = 0; ; k++) {
+      const out = k * Hs;
+      if (out >= outLen) break;
+      const nominal = Math.round(k * Ha);
+      let best = Math.min(Math.max(0, nominal), Math.max(0, L - N));
+      if (k > 0) {
+        const target = prev + Hs;             // continuación natural del trozo anterior
+        let bestC = -Infinity;
+        for (let d = -tol; d <= tol; d += 2) {
+          const s0 = nominal + d;
+          if (s0 < 0 || s0 + Hs > L || target + Hs > L) continue;
+          let c = 0;
+          for (let i = 0; i < Hs; i += 4) c += x[s0 + i] * x[target + i];
+          if (c > bestC) { bestC = c; best = s0; }
+        }
+      }
+      for (let i = 0; i < N && best + i < L; i++) {
+        y[out + i] += x[best + i] * w[i];
+        wsum[out + i] += w[i];
+      }
+      prev = best;
+    }
+    const res = ctx.createBuffer(1, outLen, sr);
+    const d = res.getChannelData(0);
+    for (let i = 0; i < outLen; i++) d[i] = wsum[i] > 1e-3 ? y[i] / wsum[i] : 0;
+    return res;
   }
 
   /* Efectos. rate se deshace al reproducir el intento (1/rate);
@@ -233,5 +278,5 @@
     }
   }
 
-  window.AudioEngine = { ensureContext, initMic, record, transform, play, stopAll, jingle, drawWave, EFFECTS };
+  window.AudioEngine = { ensureContext, initMic, record, transform, stretch, play, stopAll, jingle, drawWave, EFFECTS };
 })();
